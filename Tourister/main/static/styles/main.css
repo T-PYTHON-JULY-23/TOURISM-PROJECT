@@ -1,0 +1,20 @@
+
+.logo {
+    /* margin-top: 8px; */
+    width: 70px;
+}
+* {
+    font-family: 'Bricolage Grotesque', sans-serif  !important;
+}
+/* body{
+        background: linear-gradient(to right, rgb(122, 126, 134), rgba(255, 122, 89,0));
+} */
+body {
+    background-image: url("https://wallpapershome.com/images/wallpapers/windows-365-1920x1080-microsoft-windows-11-4k-24069.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.nav{
+    background-color: rgba(51, 68, 146, 0) !important;
+}

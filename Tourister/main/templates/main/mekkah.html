@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Mekkah
+{% endblock %}
+{% block content %}
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 500px;">
+        <div class="carousel-item active">
+            <img src="https://vid.alarabiya.net/images/2019/05/22/b802409c-6e69-4999-8129-38d61a8293ba/b802409c-6e69-4999-8129-38d61a8293ba_16x9_1200x676.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="height: 300px;">
+                <h5>Explore Mekkah</h5>
+            </div>
+        </div>
+        <div class="carousel-item" style="height: 500px;">
+            <img src="https://wallpaperaccess.com/full/3109156.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height: 500px;">
+            <img src="https://rjeem.com/wp-content/uploads/2020/02/%D9%81%D9%86%D8%A7%D8%AF%D9%82-%D9%85%D8%B7%D9%84%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AD%D8%B1%D9%85.jpg"
+                class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="row align-items-center pb-5 pt-5">
+    <div class="col">
+        <h3 class="pb-2">Experience the Spiritual Journey of a Lifetime!</h3>
+        <P>The city of Makkah has undergone significant development over the years to accommodate the increasing number
+            of pilgrims. The Masjid al-Haram, which surrounds the Kaaba, has been expanded multiple times to accommodate
+            millions of worshippers during peak times. The Abraj Al-Bait Clock Tower, one of the tallest buildings in
+            the world, is also located in Makkah and serves as a prominent landmark. Every year, millions of Muslims
+            from all over the world undertake a pilgrimage called Hajj to Makkah. Hajj is one of the Five Pillars of
+            Islam and is obligatory for all able-bodied Muslims who can afford it.</P>
+    </div>
+    <div class="col pt-5">
+        <iframe width="650" height="345" src="https://www.youtube.com/embed/6To30qKG968">
+        </iframe>
+    </div>
+</div>
+{% endblock %}
