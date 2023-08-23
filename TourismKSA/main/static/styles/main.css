@@ -1,0 +1,17 @@
+
+
+body{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.nav-link:hover {
+    
+    border-bottom: 2px solid #f7f5f5 ;
+   
+}
+
