@@ -1,0 +1,86 @@
+
+
+{% extends 'main/base.html' %}
+{% block title %}
+
+Plan your trip | Visit SA {% endblock %}
+
+
+{% block content %}
+
+    <div id="carouselExampleCaptions" class="carousel slide cities-carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="/static/images/img1.webp" class="h-100 w-100 " >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Saudi Arabia</h5>
+              <h1>A land with a rich and proud history</h1>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="/static/images/img2.jpg" class="h-100 w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Saudi Arabia</h5>
+              <h1>A Vision That Empowers Giving</h1>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="/static/images/img3.webp" class="h-100 w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Saudi Arabia</h5>
+              <h1> An important role at the center of the Islamic and Arab worlds</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+<div class="row gap-3 ms-5 me-5 mt-3 justify-content-center ">
+    <div class="Top">
+        <p>Top Destinations</p>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="/static/images/riyadh.jpg" class="card-img-top" style="height:175px;" >
+        <div class="card-body">
+            <a href="/city/Riyadh" class="city_title">Riyadh</a>
+          <p class="card-text">The capital and largest city of Saudi Arabia.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/static/images/abha.jpg" class="card-img-top" >
+        <div class="card-body">
+            <a href="/city/Abha/" class="city_title">Abha</a>
+          <p class="card-text"> is the capital of 'Asir Region in Saudi Arabia. It is situated 2,270 metres above sea level.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/static/images/alula.jpg" class="card-img-top ">
+        <div class="card-body">
+            <a href="/city/AlUla" class="city_title">AlUla</a>
+          <p class="card-text"> A Hub For Modern And Contemporary Culture. One Of The Arabian Peninsula's Oldest Cities.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/static/images/makkah.jpg" class="card-img-top" style="height:175px;">
+        <div class="card-body">
+            <a href="/city/Makkah/" class="city_title">Makkah</a>
+
+          <p class="card-text">The capital of Mecca Province in the Hejaz region of western Saudi Arabia and is considered the holiest city in Islam.</p>
+        </div>
+      </div>
+      </div>
+
+{% endblock %}
