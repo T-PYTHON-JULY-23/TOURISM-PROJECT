@@ -1,0 +1,106 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+
+Home page
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container pt-3">
+    <div class="row">
+        <div class="col">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button "style="background-color: #a3cbb9;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Saudi Culture
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>The Kingdom of Saudi Arabia has</strong> a rich heritage and ancient traditions, as it was a major trading center throughout history and witnessed the birth of the Islamic religion.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" style="background-color: #a3cbb9;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Language
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The primary language used in public interactions and transactions in the Kingdom of Saudi Arabia is Arabic, which is also its official language. The majority of people in the Kingdom speak English, which is an unofficial second language. Information is shown on all traffic signs in Arabic and English.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" style="background-color: #a3cbb9;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Currency
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>The official currency of Saudi Arabia is the Saudi riyal (SAR),</strong>and the riyal consists of 100 halalas. Banknotes are available in denominations of 5 riyals, 10 riyals, 50 riyals, 100 riyals, and 500 riyals, and coins in denominations of 1 riyal, 2 riyals, 50 halalas, 25 halalas, 10 halalas, 5 halalas, and 1 halala.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/static/images/ksa.png" class="d-block w-100  " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/static/images/arabic.png" class="d-block w-100  " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/static/images/money.png" class="d-block w-100  " alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <h1 class="pt-2"> Seasons in KSA begins</h1>
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <h4 style="background-color: #e0c3e1;"> Spring Season </h4>
+                <p> From mid-March to mid-June </p>
+            </div> 
+            <div class="col">
+                <h4 style="background-color: #e9edc3;"> Summer Season </h4>
+                <p> From mid-June to mid-September </p>
+            </div>
+            <div class="col">
+                <h4 style="background-color: #fae6cf;"> Autumn Season </h4>
+                <p> From mid-September to mid-December </p>
+            </div>
+            <div class="col">
+                <h4 style="background-color: #bed2e3;"> Winter Season </h4>
+                <p> From mid-December to mid-March </p>
+            </div>
+        </div>
+    </div>
+</div>   
+
+{% endblock %}
