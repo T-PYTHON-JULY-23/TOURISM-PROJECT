@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Abha
+{% endblock %}
+{% block content %}
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 500px;">
+        <div class="carousel-item active">
+            <img src="https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_1920,c_scale,q_auto/cnnarabic/2021/05/04/images/184127.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="height: 450px;">
+                <h5>Explore abha</h5>
+            </div>
+        </div>
+        <div class="carousel-item" style="height: 500px;">
+            <img src="https://sana-tourism.com/cdn/shop/products/3bdd926e-f2e8-44cd-9c47-81e5bbfd32f9_761800da-0c55-46ec-93f2-7728633aace3_1024x1024@2x.jpg?v=1661960265"
+                class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height: 500px;">
+            <img src="https://www.visitsaudi.com/content/dam/saudi-tourism/media/abha-/cable-car-adventure-abha.jpg"
+                class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="row align-items-center pb-5 pt-5">
+    <div class="col">
+        <h3 class="pb-2">Unveiling the Enchanting Beauty of Saudi Arabia's Hidden Gem!</h3>
+        <P>One of the main attractions in Abha is its stunning mountainous surroundings. The city is nestled in the
+            Sarawat Mountains, which provide breathtaking views and opportunities for outdoor activities such as hiking
+            and camping. The mountains are also home to several picturesque villages that offer a glimpse into
+            traditional Saudi Arabian life, Abha is also known for its vibrant festivals and events. The city hosts the
+            annual Abha Festival, which attracts artists, musicians, and performers from around the world. During this
+            festival, the city comes alive with cultural performances, art exhibitions, and traditional food stalls.</P>
+    </div>
+    <div class="col pt-5">
+        <iframe width="650" height="345" src="https://www.youtube.com/embed/6wUyBPKUrkM">
+        </iframe>
+    </div>
+</div>
+{% endblock %}
