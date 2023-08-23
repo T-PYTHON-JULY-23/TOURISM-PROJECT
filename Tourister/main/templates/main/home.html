@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+
+{% block title %} Home page {% endblock %}
+
+{% block content %}
+<header class="masthead" >
+  
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h4 class="fw-light pt-5" >Do not go far ... the spirit of Saudi Arabia</h4>
+          <h1 class="pt-5">The Kingdom of Saudi Arabia</h1>
+          
+          <p class="white_text pt-5 ">The Kingdom of Saudi Arabia is the largest country in the Arabian Peninsula.  Saudi Arabia’s population is over 27 million, including more than 8.4 million foreign residents,  and its capital city is Riyadh.
+            Saudi Arabia’s geography is diverse, with forests, grasslands, mountain ranges and deserts. The climate varies from region to region. Temperatures can reach over 110 degrees Fahrenheit in the desert in the summer, while in the winter temperatures in the north and central parts of the country can drop below freezing. Saudi Arabia gets very little rain, only about four inches a year on average.
+            The culture of Saudi Arabia is a rich one that has been shaped by its Islamic heritage, its historical role as an ancient trade center, and its Bedouin traditions. Saudi society has experienced tremendous development over the past several decades. The Saudi people have taken their values and traditions – their customs, hospitality and even their style of dress – and adapted them to the modern world.
+            <br>This area of the website offers information about some citys in  the Kingdom of Saudi Arabia.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+{% endblock %}
+
+{% block content_down %}
+<hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-bold lh-1 white_text"> Makkah Al-Mukarramah Province<span class="text-body-secondary fw-bold white_text">  is The first city: </span></h2>
+      <p class="text-bg-dark p-3">Makkah is the Sacred City as well as the holiest and the absolute most honorable place on earth. The most truthful sources from which one can take news about its history are the Noble Quran and the authentic prophetic narrations in this regard, </p>
+      <p><a class="btn btn-secondary" href="{% url 'main:makkah_view' %}">Read more »</a></p>
+    </div>
+    <div class="col-md-5">
+      <svg class="img1 "></svg>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1 white_text">Riyadh Province <span class="text-body-secondary">is The first city:</span></h2>
+    <p class="text-bg-dark p-3">city and capital of Saudi Arabia. The city’s name is derived from the plural of the Arabic rawḍah, meaning gardens or meadows, so named for a natural fertility provided by its location at the juncture of Wadis Ḥanīfah and Al-Baṭḥāʾ. The spectacular sight of Riyadh from the air, illuminated in the evening by city lights, is reminiscent of its eponymous meadows; a bright sea of lights dot the desert as if fluorescent flower gardens have suddenly blossomed among its dark contours.</p>
+    <p><a class="btn btn-secondary" href="{% url 'main:riyadh_view' %}">Read more »</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <svg class="img2"></svg>
+  </div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1 white_text">Al-Ahsa <span class="text-body-secondary">is The first city:</span></h2>
+    <p class="text-bg-dark p-3">In the eastern Arabian Peninsula, the Al-Ahsa Oasis is a serial property comprising gardens, canals, springs, wells and a drainage lake, as well as historical buildings, urban fabric and archaeological sites. They represent traces of continued human settlement in the Gulf region from the Neolithic to the present, as can be seen from remaining historic fortresses, mosques, wells, canals and other water management systems. With its 2.5 million date palms, it is the largest oasis in the world. Al-Ahsa is also a unique geocultural landscape and an exceptional example of human interaction with the environment.
+
+    </p>
+    <p><a class="btn btn-secondary" href="{% url 'main:alhassa_view' %}">Read more »</a></p>
+  </div>
+  <div class="col-md-5">
+    <svg class="img3"></svg>
+  </div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1 white_text">Dammam <span class="text-body-secondary">is The first city:</span></h2>
+    <p class="text-bg-dark p-3">The Dammam metropolitan area, or Greater Dammam, is the largest metropolitan area in the Eastern Province of Saudi Arabia. It consists of "The Triplet Cities" of Dammam, Khobar, Dhahran, Qatif and their vicinities. It had a population of 2,190,900 million as of the 2022 census. It is known for the arts, pearl culturing, entertainment and popular music and sports legacies. The area includes a variety of natural landscapes, parks, and beaches with a recreational coastline to the Persian Gulf. The Greater Dammam area is also known for being one of the cornerstones of the oil industry with the world's largest oil company and most valuable company, Saudi Aramco, being based in Dhahran, as a result of the first oil well being dug in the area.</p>
+    <p><a class="btn btn-secondary" href="{% url 'main:dammam_view' %}">Read more »</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <svg class="img4"></svg>
+  </div>
+</div>
+<hr class="featurette-divider pd-5">
+ 
+  
+{%endblock %}
