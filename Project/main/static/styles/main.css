@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barriecito&family=Caprasimo&family=Ruwudu&display=swap');
+#myvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+@media(min-aspect-ratio: 16/9){
+    #myvideo{
+        width: 100%;
+    }
+}
+
+.navbar{
+    opacity: 40%;
+}
+
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 700;
+    font-family: 'Barriecito', cursive;
+    color: whitesmoke;
+    
+}
+
+.content h2 {
+    font-family: 'Reem Kufi', sans-serif;
+    color:white;
+    font-size: 7rem;
+}
+.content1{
+    width: 100%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top:45%;
+    transform: translateY(-50%);
+    text-align: ceent;
+    justify-items: center;
+    align-items: center;
+}
+.content1 h1{
+    margin-top: 80px;
+    font-size: 80px;
+    font-weight: 600;
+    color:black;
+    font-family: 'Alfa Slab One', cursive;
+}
+.content1 h2{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Ruwudu', serif;
+    margin-top: 80px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.content1 p{
+    color: black;
+    border: 20px double;
+    border-width: 9px 1px;
+    padding-left: 3px;
+    padding-top: 4px;
+    background-color: rgb(190, 184, 184);
+    padding-bottom: 4px;
+    padding: 20px;
+    font-family: 'Staatliches', cursive;
+
+}
+.bttn{
+    width: 150px;
+    padding: 20px;
+    margin: 60px 5px;
+    text-align: center;
+    border: 1px solid;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 3px;
+    font-size: 15px;
+    left: 70%;
+    cursor: pointer;
+    font-weight: 450;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0);
+    justify-content: end;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bttn:hover{
+    background:#584b63;
+    transition: 0.5s;
+}
+.bttn:hover{
+    color: white;
+}
+.bttn:focus{
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #100f0f;
+}
+.bttn2{
+    width: 150px;
+    padding: 20px;
+    margin: 60px 5px;
+    text-align: center;
+    border: 1px solid;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 3px;
+    font-size: 15px;
+    left: 70%;
+    cursor: pointer;
+    font-weight: 450;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0);
+    justify-content: end;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bttn2:hover{
+    background:#584b63;
+    transition: 0.5s;
+}
+.bttn3{
+    width: 150px;
+    padding: 20px;
+    margin: 60px 5px;
+    text-align: center;
+    border: 1px solid;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 3px;
+    font-size: 15px;
+    left: 70%;
+    cursor: pointer;
+    font-weight: 450;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0);
+    justify-content: end;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bttn3:hover{
+    background:#584b63;
+    transition: 0.5s;
+}
+.bttn4{
+    width: 150px;
+    padding: 20px;
+    margin: 60px 5px;
+    text-align: center;
+    border: 1px solid;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 3px;
+    font-size: 15px;
+    left: 70%;
+    cursor: pointer;
+    font-weight: 450;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0);
+    justify-content: end;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bttn4:hover{
+    background:#584b63;
+    transition: 0.5s;
+   
+}
+.carousel-inner{
+    width:  80%;
+    padding-bottom: 20px;
+    left: 22%;
+    
+}
+.carousel-item{
+    width: 70%;
+    padding-bottom: 20px;
+    
+}
+h5{
+    color: rgb(0, 0, 0);
+    font-family: 'Alfa Slab One', cursive;
+    border: double;
+    background-color: rgb(153, 141, 153);
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0);
+    font-size: 15;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid;
+    background-color: rgb(153, 141, 153);
+    font-size: 12px;
+}

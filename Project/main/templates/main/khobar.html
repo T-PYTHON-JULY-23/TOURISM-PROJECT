@@ -1,0 +1,28 @@
+{%extends 'main/base.html'%}
+
+
+{% block title%} Al Khobar {%endblock%}
+
+
+{% block content %}
+<style>
+body {
+    background-image: url("/static/images/khobg.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+</style>
+<div class="content1">
+    <h1> Alkohber!</h1>
+    <p>Al-Khobar is a Saudi Arabian city on the Arabian Gulf. Its Corniche, a large waterfront area, includes Prince Faisal bin Fahad Sea Park, with cafes and playgrounds. Nearby, the city’s island Water Tower offers panoramic views<br> The Sultan Bin Abdulaziz Science & Technology Center (SciTech) has an aquarium, interactive displays and an IMAX theater. West, the Aramco Exhibit is a museum exploring the Saudi oil industry.</p>
+    <div>
+        <a href="{% url 'main:Khobar2_view'%}">
+            <button class="bttn4">Places to visit in Alkohber</button>
+          </a>
+    </div>
+</div>
+{% endblock %}

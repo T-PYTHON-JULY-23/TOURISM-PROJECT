@@ -1,0 +1,46 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{% block title%} Riyadh {%endblock%}
+
+
+{% block content %}
+<body style="background-color:rgb(153, 141, 153)"></body>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{%static 'images/wwl.jpeg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" class="photos">
+          <h5>Winter Wonderland</h5>
+          <p>simply at times Winter Wonderland, is an annual carnival held during the Riyadh Season entertainment festival in a 93-acres theme park located in King Abdullah Financial District of Riyadh, Saudi Arabia. It was inaugurated in October 2019 during the first edition of Riyadh Season</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'images/boule.jpeg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Boulevard</h5>
+          <p>caters to all age groups and offers nine sub-zones with a range of famous attractions: The musical fountain or dancing fountain, The Square, a replica of New York's Times</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/alam.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Al-Amaariah</h5>
+          <p>Al Amaaria Village is for everyone and because it is not limited to a particular category, come and live the atmosphere of sports and adventures</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock %}

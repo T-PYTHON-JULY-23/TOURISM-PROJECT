@@ -1,0 +1,28 @@
+{%extends 'main/base.html'%}
+
+
+{% block title%} AlUla {%endblock%}
+
+{% block content %}
+<style>
+body {
+    background-image: url("/static/images/alubg.jpg");
+    height: 100%;
+    width: 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+</style>
+<div class="content1">
+    <h1>AlUla!</h1>
+    <p>AlUla is a place of extraordinary human and natural heritage,Places to Visit in Al Ula
+        located in the northwest region of Saudi Arabia, is a popular tourist destination that boasts significant historical and archaeological sites<br> including the UNESCO World Heritage Site of Hegra's tombs and the ancient city of Dadan</p>
+    <div>
+        <a href="{% url 'main:Ula2_view'%}">
+            <button class="bttn3">Places to visit in AlUla</button>
+          </a>
+    </div>
+</div>
+{% endblock %}

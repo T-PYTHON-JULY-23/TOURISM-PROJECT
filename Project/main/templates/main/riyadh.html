@@ -1,0 +1,30 @@
+{%extends 'main/base.html'%}
+
+
+{% block title%} Riyadh {%endblock%}
+
+
+{% block content %}
+<style>
+body {
+    background-image: url("/static/images/rio2bgg.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+</style>
+<div class="content1">
+    <h1>Riyadh City!</h1>
+    <p>Riyadh, Saudi Arabia's capital and main financial hub, is on a desert plateau in the country’s center<br>
+        Business district landmarks include the 302m-high Kingdom Centre, with a sky bridge connecting 2 towers<br>
+        and 267m-high Al Faisaliah Centre, with a glass-globe summit. In the historical Deira district<br> 
+        Masmak Fort marks the site of the 1902 raid that gave the Al Sauds control of Riyadh.</p> 
+        <a href="{% url 'main:riyadh2_view'%}">
+            <button class="bttn">Places to visit in Riyadh</button>
+          </a>
+</div>
+{% endblock %}
