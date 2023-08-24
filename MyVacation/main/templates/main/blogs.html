@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+
+{% block title %} blogs {% endblock %}
+
+
+{% block content %}
+<div class="card w-75 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+<button > add blog</button>
+<!--placeholder="name@example.com"-->
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">place name</label>
+    <input class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">kidz,family</label>
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        type
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " type="radio" checked>famely</a></li>
+        <li><a class="dropdown-item" type="radio">cuble</a></li>
+        <li><a class="dropdown-item" type="radio">kidz</a></li>
+       
+      </ul>
+    
+    <input  class="form-control" id="exampleFormControlInput1" >
+    <!--
+    <ul class="list-group">
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+          <label class="form-check-label" for="firstRadio">First radio</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+          <label class="form-check-label" for="secondRadio">Second radio</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+          <label class="form-check-label" for="thirdRadio">Third radio</label>
+        </li>
+      </ul>  -->
+  </d iv>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">about place</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+  </div>
+{%endblock%}
