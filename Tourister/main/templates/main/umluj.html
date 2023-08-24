@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+{% block title %}  umluj {% endblock %}
+
+
+
+
+ 
+
+
+
+
+{%block image%} 
+
+<div style="background-image: linear-gradient(rgba(179,175,175,0),rgba(0,0,0,9)) , url('/static/images/umluj_bacground.jpeg') " class="backimage chimg">
+
+</div>
+
+{%endblock%}
+
+
+
+
+
+
+
+
+
+{%block content%} 
+
+<div class="container pt-4"> 
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-8 mt-5 ">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/images/umluj1.jpg" class="d-block w-100 h100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About umluj</h5>
+              <p style="background-color: black; opacity: 0.7; padding: 5px;">umluj is a city in the Tabuk province that spreads 150 kilometers north of Yanbu and contains 104 islands.With clear, turquoise waters, white silk-like sand, serene peace and quiet and a lack of crowds <a style="color:rgb(248, 136, 8);" href="https://www.arabnews.com/node/1402166/saudi-arabia" target="_blank">for more info click here</a></p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/static/images/umluj2.jpg" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Activity in umluj</h5>
+              <p> umluj offering luxurious resorts and numerous adventure and activities <a style="color:rgb(248, 136, 8); background-color: black; opacity: 0.6;" href="https://www.visitsaudi.com/en/see-do/destinations/dammam?gclid=Cj0KCQjw3JanBhCPARIsAJpXTx7D84gesUqUpPMk5G9GHk3y_0l2b8cQ9G2KAeJ4d4uRhTHFC0fz4esaAmA1EALw_wcB&gclsrc=aw.ds" target="_blank"> <b> to discover more activity click here</b></a></p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pENDOEzqRFM?si=c9nT8xM-IUG-P6Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class="d-block w-100 h-200"></iframe>  
+            </div>
+
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+
+   
+
+  </div>
+</div>
+
+
+{%endblock%}

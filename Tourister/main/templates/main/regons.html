@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+{% block title %}  Regons {% endblock %}
+
+
+{%block image%} 
+
+
+<div style="background-image: url('/static/images/region_background.jpg'); " class="backimage chimg ">
+
+</div>
+
+
+{%endblock%}
+
+
+
+{%block content%}
+
+<div class=" d-flex flex-row justify-content-center">
+    <div class="container contain_content ps-4"> 
+   
+        <div class="row">
+            <div class="col"> 
+                <a href="{%url 'main:riyadh_view'%}"> <img src="/static/images/Riyadh.jpeg" width="230" height="230"> </a>
+
+                    <div class="d-flex justify-content-center text_regon"> 
+                        Riyadh
+                    </div>
+
+            </div>
+
+            <div class="col">
+                <a href="{%url 'main:jeddah_view'%}"> <img  src="/static/images/jeddah.jpg" width="230" height="230"> </a>
+                <div class="d-flex justify-content-center text_regon"> 
+                    Jeddah
+                </div>
+            </div>
+
+            <div class="col">
+                <a href="{%url 'main:alkhobar_view'%}"> <img  src="/static/images/alkhobar.jpg" width="230" height="230"> </a>
+                <div class="d-flex justify-content-center text_regon"> 
+                    Al khobar
+                </div>
+            </div>
+
+            <div class="col">
+                <a href="{%url 'main:umluj_view'%}"> <img  src="/static/images/umluj.jpg" width="230" height="230"> </a>
+                <div class="d-flex justify-content-center text_regon"> 
+                    umluj
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+{%endblock%}
