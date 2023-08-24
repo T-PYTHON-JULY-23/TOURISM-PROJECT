@@ -9,6 +9,6 @@ urlpatterns=[
     path('regons/', views.regons, name='regons_view'),
     path('city/Riyadh/', views.riyadh, name='riyadh_view'),
     path('city/jeddah/', views.jeddah, name='jeddah_view'),
-    path('city/alkhobar/', views.jeddah, name='alkhobar_view'),
-    path('city/umluj/', views.jeddah, name='umluj_view'),
+    path('city/alkhobar/', views.alkhobar, name='alkhobar_view'),
+    path('city/umluj/', views.umluj, name='umluj_view'),
 ]
