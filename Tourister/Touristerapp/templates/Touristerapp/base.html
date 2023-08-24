@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Tourister in Saudi Arabia{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="{%  url 'Touristerapp:home'%}">Home</a></li>
+                <li><a href="{%  url 'Touristerapp:jeddah'%}">Jeddah</a></li>
+                <li><a href="{%  url 'Touristerapp:riyadh'%}">Riyadh</a></li>
+                <li><a href="{%  url 'Touristerapp:alula'%}">Alula</a></li>
+                <li><a href="{%  url 'Touristerapp:neom'%}">Neom</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    {%block video%}
+   
+        {%endblock%}
+        <div class="content-overlay">
+            {% block content %}
+            {% endblock %}
+            
+        </div>
+
+</body>
+</html>
+

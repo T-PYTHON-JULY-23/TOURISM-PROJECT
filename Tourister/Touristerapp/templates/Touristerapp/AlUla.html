@@ -1,0 +1,59 @@
+{% extends 'Touristerapp/base.html' %}
+{% load static %}
+{% block title %}Alula - Tourister{% endblock %}
+
+{%block video%}
+<div class="hero">
+    <video autoplay muted loop plays-inline class="backVid" >
+        <source src="https://firebasestorage.googleapis.com/v0/b/tourister-28202.appspot.com/o/AlulaBackgroundVid.mp4?alt=media&token=5db2c6d2-bfbd-47e9-bb81-89b17aeb1ba3" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{%endblock%}
+
+
+{% block content %}
+<div class="content">
+    <h1>Welcome to <br> Alula </h1>
+    <p> 
+        Nestled amidst the captivating landscapes of Saudi Arabia, AlUla stands as an awe-inspiring testament <br>
+        to natural beauty and ancient heritage. Its majestic rock formations, serene desert oases, and towering <br>
+        sandstone mountains create a backdrop that seems to belong to another world. AlUla's historical significance<br>
+        is unrivaled, with archaeological treasures that date back thousands of years, including the remarkable Nabatean <br>
+        city of Hegra, a UNESCO World Heritage Site. Visitors can explore tombs carved into the rocks, intricate inscriptions,<br>
+        and remnants of civilizations that once thrived in this desert oasis. The immersive experience extends to the dramatic <br>
+        landscapes of Elephant Rock and the enchanting Elephant Rock Oasis, where verdant palms flourish against the stark desert <br>
+        surroundings. The site's revitalization efforts have transformed it into a center for cultural exchange, hosting events like <br>
+        the Winter at Tantora Festival, which brings together art, music, and entertainment on a global scale. AlUla is not just a <br> 
+        destination; it's an evocative journey through time, where every moment is a step into the past and a leap into the future, <br>
+        all under the open skies of this captivating desert wonderland.
+    </p>
+</div>
+
+<section class="container">
+    <div class="slider-wraped">
+        <div class="slider-text">
+            <h2 class="slide-h">Discover the Beauty of AlUla</h2>
+            <p class="slider-p">Explore the mesmerizing landscapes and rich history of AlUla, where ancient heritage meets natural wonders.</p>
+        </div>
+     <div class="slider">
+        <img id="alula1" src="{% static 'images/alulaP1.jpg' %}" alt="alula1">
+        <img id="alula2" src="{% static 'images/alulaP2.jpg' %}" alt="alula2">
+        <img id="alula3" src="{% static 'images/alulaP3.jpg' %}" alt="alula3">
+        <img id="alula4" src="{% static 'images/alulaP4.jpg' %}" alt="alula4">
+        <img id="alula5" src="{% static 'images/alulaP5.jpg' %}" alt="alula5">
+        <img id="alula6" src="{% static 'images/alulaP6.jpg' %}" alt="alula6">
+        
+     </div>
+     <div class="slider-nav">
+        <a href="#alula1"></a>
+        <a href="#alula2"></a>
+        <a href="#alula3"></a>
+        <a href="#alula4"></a>
+        <a href="#alula5"></a>
+        <a href="#alula6"></a>
+     </div>   
+    </div>
+
+</section>
+{%endblock%}

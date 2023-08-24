@@ -1,0 +1,58 @@
+{% extends 'Touristerapp/base.html' %}
+{%load static%}
+{% block title %}jeddah - Tourister{% endblock %}
+
+{%block video%}
+<div class="hero">
+    <video autoplay muted loop plays-inline class="backVid" >
+        <source src="https://firebasestorage.googleapis.com/v0/b/tourister-28202.appspot.com/o/jeddahBackgroundVid.mp4?alt=media&token=6673ba2d-e007-48f0-9360-4c384178f5c6" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{%endblock%}
+{% block content %}
+<div class="content">
+    <h1>Welcome to <br> Jeddah</h1>
+    <p> 
+        Jeddah, often referred to as the "Gateway to the Holy Cities," is a vibrant and diverse city on the western coast of Saudi Arabia.<br> 
+        Renowned for its historical significance, modern infrastructure, and stunning coastal beauty, Jeddah has emerged as a prominent destination<br>
+        for tourists. The city's unique blend of tradition and innovation is evident in its ancient alleys, bustling souks, and towering skyscrapers that<br>
+        dominate the skyline. Jeddah offers a plethora of attractions, including the iconic King Fahd Fountain, one of the world's tallest fountains, and the <br>
+        historic district of Al-Balad with its intricately designed traditional houses. Visitors can explore the enchanting Corniche, a waterfront promenade lined <br>
+        with parks, art installations, and entertainment venues. Jeddah also holds religious importance as a port city for pilgrims on their way to Mecca, making it a <br>
+        cultural crossroads where diverse traditions and cultures converge. With its warm hospitality, rich heritage, and modern amenities, Jeddah beckons travelers to <br>
+        experience the blend of history, commerce, and spirituality that defines this dynamic Saudi Arabian city.
+    </p>
+</div>
+
+<section class="container">
+    <div class="slider-wraped">
+        <div class="slider-text">
+            <h2>Capturing Jeddah's Essence Where History and Modernity Converge</h2>
+        </div>
+     <div class="slider">
+        <img id="JED1" src="{% static 'images/jeddahP3.jpg' %}" alt="JED1">
+        <img id="JED2" src="{% static 'images/jeddahP6.jpg' %}" alt="JED2">
+        <img id="JED3" src="{% static 'images/jeddahP8.jpg' %}" alt="JED3">
+        <img id="JED4" src="{% static 'images/jeddahP7.jpg' %}" alt="JED4">
+        <img id="JED5" src="{% static 'images/jeddahP11.jpg' %}" alt="JED5">
+        <img id="JED6" src="{% static 'images/jeddahP10.jpg' %}" alt="JED6">
+        <img id="JED7" src="{% static 'images/jeddahP12.jpg' %}" alt="JED7">
+        <img id="JED8" src="{% static 'images/jeddahP13.jpg' %}" alt="JED8">
+     </div>
+     <div class="slider-nav">
+        <a href="#JED1"></a>
+        <a href="#JED2"></a>
+        <a href="#JED3"></a>
+        <a href="#JED4"></a>
+        <a href="#JED5"></a>
+        <a href="#JED6"></a>
+        <a href="#JED7"></a>
+        <a href="#JED8"></a>
+     </div>   
+    </div>
+
+</section>
+
+
+{%endblock%}

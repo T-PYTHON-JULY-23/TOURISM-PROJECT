@@ -1,0 +1,23 @@
+{% extends 'Touristerapp/base.html' %}
+{%load static%}
+{% block title %}Home - Tourister{% endblock %}
+
+{%block video%}
+<div class="hero">
+    <video autoplay muted loop plays-inline class="backVid" >
+        <source src="https://firebasestorage.googleapis.com/v0/b/tourister-28202.appspot.com/o/saudiArabiaVid.MP4?alt=media&token=2376b616-747b-49db-956c-637f78327977" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{%endblock%}
+{% block content %}
+<div class="content">
+    <h1>Welcome to <br> Saudi Arabia</h1>
+    <p> 
+        Saudi Arabia has been actively working to develop its tourism sector as part of its Vision 2030 plan,<br> which aims to
+        diversify the country's economy and reduce its dependence on oil.<br> With its rich history, stunning landscapes, and cultural heritage,
+        Saudi Arabia has started attracting tourists from around the world.
+    </p>
+</div>
+{% endblock %}
+
