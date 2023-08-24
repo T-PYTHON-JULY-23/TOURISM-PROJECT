@@ -1,0 +1,66 @@
+{% extends 'main/base.html' %}
+
+{% block title %}  {% endblock %}
+
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col">
+        <h1></h1>
+        <p>
+        
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/static/img/riyadh.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Riyadh</strong></h5>
+                  <p class="card-text">The Riyadh region is one of the administrative regions in the Kingdom of Saudi Arabia. The seat of its emirate is the city of Riyadh, the capital of the Kingdom of Saudi Arabia. It is located in the heart of the Kingdom of Saudi Arabia..</p>
+                  <a href="{% url 'main:riyadh_view' %}" class="btn btn-warning">discovered</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/static/img/alula.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Alula</strong></h5>
+                  <p class="card-text">Al-Ula is one of the cities of the Kingdom of Saudi Arabia, located in the west of the Arabian Peninsula, and belongs to the Medina region. Al-Ula enjoys natural beauty and a unique human heritage. This unique destination offers a distinctive global tourism experience</p>
+                  <a href="{% url 'main:alula_view' %}" class="btn btn-warning">discovered</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/static/img/jeeddaa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>jeddah</strong></h5>
+                  <p class="card-text">The Bride of the Red Sea; The city that never sleeps is famous for its diverse cultures, beautiful beaches, popular markets and delicious traditional food.</p>
+                  <a href="{% url 'main:jeddah_view' %}" class="btn btn-warning">discovered</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/static/img/abhaa.jpg"aclass="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Abha</strong></h5>
+                  <p class="card-text">The city of Abha, due to its geographical location and the relative abundance of vegetation and the amount of rain it enjoys, in addition to the mild climate, is considered one of the most important summer resorts in the Kingdom of Saudi Arabia, and because of its great height above sea level, it is also called the Bride of the Mountain...</p>
+                  <a href="{% url 'main:abha_view' %}" class="btn btn-warning">discovered</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+
+
+    
+    
+        
+                  
+{% endblock %}    

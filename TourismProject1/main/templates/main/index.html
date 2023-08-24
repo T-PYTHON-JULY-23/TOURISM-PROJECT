@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+
+{% block title %} {% endblock %}
+
+
+{% block content %}
+
+<div class="row pt-4">
+  <div class="col-12 ">
+
+    <h1><strong>Tourism in Saudi Arabia</strong></h1>
+    <p>Tourism in Saudi Arabia has an important role in the growth and economic development of the Kingdom, and there are many reasons that make Saudi Arabia an important tourist destination, the most important of which are:
+
+        Existence of historical and heritage monuments and ancient monuments
+        The presence of religious sanctities such as the Grand Mosque and the Noble Prophet’s Mosque, which attract millions of Muslims to perform Hajj and Umrah rituals.
+        The presence of scenic tourist places such as Abha, Taif and other tourist cities in Saudi Arabia
+        Holding exhibitions and festivals
+        , and the presence of recreational activities</p>
+    
+      <div class="carousel-item active" style="height: 80vh;width: 100%; overflow: hidden;">
+        <video autoplay loop muted plays-inline>
+        <img src="/static/img/videoo.mp4" class="d-block w-100"  alt="...">
+        <source src="/static/img/videoo.mp4" type="video/mp4" class="back-video">
+        </video>
+        <div class="carousel-caption d-flex justify-content-center align-items-center  margin-top"style= "height: 70%;" >
+          <h5 class="fs-2" >Let's discover the places of tourism in the cities of Saudi Arabia</h5>
+          <a href="{% url 'main:about_view' %}" class="btn btn-outline-dark">discovered</a>
+          
+          
+          
+          
+       
+      </div>
+      
+    
+    </div>
+    </div> 
+
+    
+      
+      
+   
+   
+{% endblock %}        

@@ -1,0 +1,30 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.carousel-item{
+    height: 60vh;
+    min-width: 50vh;
+   }
+
+.btn{
+    color: #ccc;
+    font-weight: 150%;
+    background-color: chocolate;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+.row{
+    background-color: rgb(220, 220, 214);
+}
+h1 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+  
