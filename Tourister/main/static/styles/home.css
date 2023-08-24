@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  width: 120px;
+  height: auto;
+}
+.navbar-nav .nav .nav-link {
+  color: black;
+  text-shadow: 2px 2px 4px rgba(230, 230, 230, 0.7);
+  transition: font-size 0.3s ease-in-out;
+}
+.navbar-nav .nav .nav-link:hover {
+  font-size: 2rem;
+}
+
+.video-background video {
+  min-width: 100%;
+  max-height: 900px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.welcoeMassege {
+  background-color: #eeeeee;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+
+.welcoeMassege,
+.cities-list,
+.carousel {
+  margin: 50px 100px;
+}
+
+.carousel-item .carousel-caption h5,
+.carousel-item .carousel-caption p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.riyadh-bg {
+  background: url(https://p.turbosquid.com/ts-thumb/w9/8sJkzK/hV/masmak_fortress_s1/jpg/1621642837/1920x1080/fit_q99/be02c4594aba01b55285583ff6baaefc380171f2/masmak_fortress_s1.jpg)
+    #eeee;
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+}
+.makkah-bg {
+  background: url(https://th.bing.com/th/id/R.be92cb1ca4dc3ecceeef3eb89457bc90?rik=r2tRcdFre7o34A&riu=http%3a%2f%2fundomiel84.files.wordpress.com%2f2011%2f03%2fmakkah.jpg&ehk=Utm5%2bAh12bAB89NaKAr6T49RqlOKRsyabMt1w0fYW7o%3d&risl=&pid=ImgRaw&r=0)
+    #eeee;
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+}
+.baha-bg {
+  background: url(https://prod-wafy-api.s3.eu-central-1.amazonaws.com/images/articles/377-20200709164736-5333088.jpg)
+    #eeee;
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+}
+.dammam-bg {
+  background: url(https://th.bing.com/th/id/R.380341ddf0fd1d3b4eab5d18391429eb?rik=t5tv7dUK5U0yXQ&pid=ImgRaw&r=0)
+    #eeee;
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+}
