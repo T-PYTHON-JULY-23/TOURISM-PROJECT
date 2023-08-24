@@ -1,0 +1,20 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{%block title%}TOURISM{%endblock%}
+{% block content %}
+<video autoplay loop muted plays-inline class="back-video">
+  <source src="{% static 'imges/ciif.mp4' %}" type="video/mp4" />
+</video>
+<div class="content">
+  <h1 class="text-uppercase">in kingdom Saudi Arabia</h1>
+  <p>
+    <br />Discover the splendor and diversity of the Kingdom of Saudi Arabia on
+    an unforgettable tourist trip! Explore the enchanting atmosphere of the
+    desert, enjoy the beauty of the charming coasts, and discover its ancient
+    heritage and rich culture.<br />
+  </p>
+ <br> <a href="http://127.0.0.1:8000/city/" class="btn"><button>DISCOVER</button></a>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{%block title%}ALULA City{%endblock%}
+{% block content %}
+<video autoplay loop muted plays-inline class="back-video">
+  <source src="{% static 'imges/ALUAL.mp4' %}" type="video/mp4" />
+</video>
+<div class="content">
+  <h1 class="text-uppercase">Explore the splendor of Alula a natural wonder amid the mountains</h1>
+  <p>
+    <br />Get ready for an exceptional and unforgettable experience.
+     The soaring edges of the Ala Mountain will challenge you with breathtaking views.
+     You will feel the thrill and excitement as you traverse challenging terrains and climb steep rocks.
+    <br />
+  </p>
+  <br /><a href="http://127.0.0.1:8000/VideoAl/" class="btn"><button>LET'S GO</button></a>
+</div>
+{% endblock %}
