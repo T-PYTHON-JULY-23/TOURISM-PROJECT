@@ -1,0 +1,171 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Makkah {% endblock %}
+{% block wall %}{% static 'images/مكةة.jpg' %}{% endblock %}
+
+{% block video %}
+<source src="/static/vid/videoplayback (3).mp4" type="video/mp4">
+{% endblock video%}
+{% block videotitle %}
+<h1 class="display-1 text-white mb-md-4">Makkah</h1>
+    {% endblock videotitle %}
+
+<div>
+  {% block videocontent%}
+<p class="lead mb-0">Sacred Mosque</p>
+{% endblock videocontent %}
+
+
+
+{% block leftContent %}
+<h2> The Sacred Mosque, the greatest Islamic spot on earth
+</h2>
+<p>The Sacred Mosque abounds with components of lofty meaning, of high status among Muslims, and places that do not know a way to stillness, nor a way to sleep, beginning with the courtyard of the holy Kaaba, to the paths of pursuit between the two mountains of Safa and Marwa, where Hagar sought - peace be upon her -.</p>
+<br>
+
+<p>The Sacred Mosque received great care, and the finest materials and innovative technologies were used in it. To serve its destinations, whose number exceeds millions per year. Over the course of 24 hours, and every day of the year, tranquility dominates the souls of visitors to the Grand Mosque in Mecca, and in every corner of it, you find preachers, worshipers, and those seeking forgiveness, as they populate the spaces with sincere hope and overwhelming longing.</p>
+<p>Dead in the past in Bakkah, Umm Al-Qura, and Al-Balad Al-Amin, and its mountains witnessed the first citizen of the revelation, and its visitors stand in amazement in front of the honorable Kaaba, the kiss of Muslims from all over the world, in the middle of the Sacred Mosque with its majestic view, and surrounded by thousands of worshipers around the clock, as Makkah Al-Mukarramah welcomes millions Muslim visitors who go to it for Hajj or Umrah, as it is the purest place and the holiest Islamic destination in the world, while it includes historical destinations that reveal immortal stories that left their mark on Islamic history. Seasonal, which highlighted its cultural and commercial status, and while Mecca receives its guests from all parts of the earth, Islamic teachings require entry to the Haram area for Muslims only.</p>
+{% endblock leftContent %}
+
+
+{% block fristImageContent %}
+<h5>Bayadiyah Palace in Mecca</h5>
+<p>Mosques in Makkah Al-Mukarramah receive special care, especially those associated with the biography of the Prophet Muhammad - may God bless him and grant him peace -. Among these mosques, the Al-Ja’rana Mosque, located in the east of Makkah Al-Mukarramah, stands out, as it is characterized by a modern architecture that preserves heritage details, which take you back to the time of its construction. As for its area, it is 430 square meters, and can accommodate about 1,000 worshipers. Muslims can visit the Al-Jaarana Mosque to perform prayers at any time.</p>
+{% endblock fristImageContent %}
+
+
+{% block fristImage %}
+{% static "images/bayadiyah-palace_crop-1920x1080.webp" %}
+{% endblock fristImage %}
+
+{% block SecondImageContent %}
+<h5>Al-Jaarana Mosque</h5>
+<p>The mosques in Makkah Al-Mukarramah receive special care, especially those associated with the biography of the Prophet Muhammad - may God bless him and grant him peace -. Among these mosques, the Al-Ja’rana Mosque, located in the east of Makkah Al-Mukarramah, stands out, as it is characterized by a modern architecture that preserves heritage details, which take you back to the time of its construction. As for its area, it is 430 square meters, and can accommodate about 1,000 worshipers. Muslims can visit the Al-Jaarana Mosque to perform prayers at any time.</p>
+{% endblock SecondImageContent %}
+
+{% block secondImage %}
+{% static "images/p0nvrmgd.png" %}
+{% endblock secondImage %}
+
+{% block ThirdImageContent %}
+<h5>Namera Mosque in Arafat</h5>
+<p>Namera Mosque, where the Prophet - may God’s prayers and peace be upon him - prayed during the noon and afternoon prayers together and shortened during the farewell pilgrimage, and it is one of the most prominent religious landmarks that pilgrims pass through on the ninth day of Dhu al-Hijjah to pray in it, following the example of the Messenger - Muhammad, may God bless him and grant him peace -, and application of his Sunnah</p>
+{% endblock ThirdImageContent %}
+
+
+
+{% block ThirdImage %}{% static 'images/pq5b97cr.png' %}{% endblock %}
+
+{% block FourthImageContent %}
+<h5>Queer Palace</h5>
+<p>Makkah Al-Mukarramah is home to many steadfast historical buildings despite the passage of the years. The Gwer Palace stands out in the Al-Biban area, as it is a historical landmark with a unique architectural design, and it is estimated to be 100 years old. This palace belongs to its builder, Ahmed Abdullah Bashnam Al-Amoudi, who was known as “Queer”.</p>
+{% endblock FourthImageContent %}
+
+{% block FourthImage %}
+{% static "images/jyjirzxf.png" %}
+{% endblock FourthImage %}
+
+
+
+{% block Image1 %}{% static 'images/visit-saudi-cards-02.png' %} {% endblock Image1 %}
+
+
+
+{% block slides%}
+
+<h1 style="background-color: burlywood;" dir="rtl" class="text-center">تعرف على أم القرى
+</h1>
+
+<div class="slides">
+    <br>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          
+          <div class="item active">
+  
+            <div class="item">
+  
+            <img  src="{% static 'images/المسجد الحرامم.webp' %}" style="width:100%;">
+            <div class="carousel-caption">
+      
+              <h3>المسجد الحرام، أعظم بقعة إسلامية على وجه الأرض.</h3>
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">منذ بداية التاريخ البشري إلى بزوغ  الدين الإسلامي، احتلت الكعبة المشرفة في المسجد الحرام مكانة مقدسة، لما تحمله من دلالات دينية ترمز إلى الخالق عز وجل. اليوم، يدين بالإسلام قرابة ملياري إنسان، تتجه أرواحهم قبل أجسادهم نحو القبلة، التي أمرهم الله -عزوجل- بالتوجه نحوها، ليصلوا خمس مرات في اليوم الواحد، يطلبون العون والهداية والمغفرة. 
+
+                تستقبل أرض مكة المكرمة سنويًا ملايين المعتمرين والحجاج والمصلين، لتأدية شعائرهم الدينية في حين تهفو قلوبهم إلى أجواء زاخرة بالروحانية، مستشعرين فيه سكينة الإيمان.
+               
+               ننوه إلى أن زيارة المسجد الحرام في مكة المكرمة تقتصر على المسلمين والمسلمات فقط.</p>
+     
+  
+            </div>
+          </div>
+          </div>
+    
+          <div class="item">
+  
+            <img  src="{% static 'images/حي حراء.webp' %}" style="width:100%;">
+  
+  
+            <div class="carousel-caption">
+ 
+              <h3>حي حراء الثقافي، أشهر أحياء مكة المكرمة السياحية.</h3>
+  
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">أثناء وجودك في مكة المكرمة، لا تفوت فرصة استكشاف ماضي المدينة وحاضرها، المعروضان في حي حراء الثقافي، ما بين معارض تتناول السيرة النبوية، وأخرى تختص بالقرآن الكريم، إضافة إلى مكتبة ثرية، ومتحفٍ للتعرف على أهم مشروب سعودي (القهوة)، وحدائق خضراء غناء، ومقاهٍ متنوعة، ومطاعم شهية، وسبيل لصعود جبل النور، للوصول إلى غار حراء.</p>
+          </div>
+          </div>
+        
+          <div class="item">
+            
+            <img  src="{% block Image3 %}{% static 'images/مجمع الملك عبدالعزيز لكسوة الكعبة المشرفة.jpg' %} {% endblock Image3 %} " style="width:100%;">
+  
+            <div class="carousel-caption">
+   
+  
+              <h3>مجمع الملك عبدالعزيز لكسوة الكعبة المشرفة</h3>
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">منذ بداية الدولة السعودية، طالت العناية أدق تفاصيل الحرم المكي الشريف، ليُخصص مجمع كامل للعناية بكسوة الكعبة الشريفة، يحمل اسم مجمع الملك عبدالعزيز لكسوة الكعبة المشرفة، تحت إشراف الرئاسة العامة لشؤون المسجد الحرام والمسجد النبوي.
+                بخيوط مطلية بالذهب البراق، تخاط الآيات القرآنية والتسبيحات على رداء الكعبة المشرفة الحريري كل عام. تعد زيارة مجمع الملك عبدالعزيز لكسوة الكعبة المشرفة تجربة ثرية لاكتشاف المراحل التي تمر بها حياكة الكسوة واستبدالها، وللتعرف على أقسام المجمع بصحبة المرشدين، بل ويمكنك المشاركة في تعلم طريقة حياكتها وتطريزها برفقة خبراء المجمع.</p>
+            
+  
+            </div>
+          </div>
+
+
+
+          
+ 
+
+
+  
+        </div>
+  
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        <br>
+        <!-- End Example Code -->
+  
+  </div>
+  
+{% endblock %}
+
+

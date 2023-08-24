@@ -1,0 +1,559 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>{% block title %} Tourism {% endblock %}</title>
+</head>
+<body>
+   
+
+    <style>
+
+body{
+        background-image: url("{% block wall %}{% static 'images/photo1692681343.jpeg' %}{% endblock %}");
+        }
+        .video-background-holder {
+          object-fit: cover;
+          width: 100vw;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          }  
+          .video-background-holder video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+          }
+          
+          .video-background-content {
+            position: relative;
+        
+            z-index: 2;
+          }
+          
+          .video-background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+          }
+
+    
+    
+    .nav-item a{
+      color:#dfdfdf;
+    }
+    .nav-item a:hover {
+      color:#fff
+    }
+    .nav-item{
+      min-width:12vw;
+    }
+    
+    #navbarNavDropdown.collapsing .navbar-nav,
+    #navbarNavDropdown.show .navbar-nav{
+      background:#037582;
+      padding:12px;
+    }  
+        
+          .container{
+            background-size :contain;
+
+          }
+          .card-group{
+            display: flex;
+            justify-content: space-around;
+            justify-content: space-between;
+            border-radius: 15px;
+
+          }
+          .card{
+               margin-right:20px!important;
+               margin-left:20px!important;
+               margin-bottom:0px!important;
+               width: 100% !important;
+               height: 100% !important;
+  }
+  #myCarousel{
+    padding: 0;
+  }
+  .body{
+
+
+width: 100%;
+background-image: url(hh2.jpg) ;
+background-size: cover;
+background-repeat: no-repeat;
+color: honeydew;
+background-position: center;
+position: relative;
+ background-attachment: fixed; 
+}
+  .content{
+    display: grid;
+	place-items: center
+}
+  .body-content{
+    color: darkslategrey;
+    background-color:rgb(189, 170, 148);
+    width: 85%;
+    border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.about-left{
+    margin: 60px;
+    padding: 120x;
+    margin-right: 120px;
+
+
+}
+.about-left h2{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+    color: rgb(123, 109, 159);
+}
+#carouselExampleDark{
+
+    background-color: rgb(203, 168, 127);
+    border-radius: 10px;
+    width: 420px; 
+    float: right; 
+    margin-top: 10%;
+    overflow: hidden;
+
+}
+.about-right p{
+    color: darkslategrey;
+    height: 130px;
+    padding: 0px 40px;
+    text-align: center;
+}
+.about-right h5{
+    color: #7b6d9f;
+    margin-top: 40px;
+    text-align: center;
+    height: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+
+}
+.dawn-content{
+
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.item{
+  height: 600px !important;
+}
+    </style>
+
+            <!--Navbar-->
+    <nav class="navbar navbar-dark bg-transparent">
+
+      <!-- Navbar brand --> 
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <a class="navbar-brand me-2" href="#">
+          <img src="/static/images/logoKsa1.png" alt="" class="invert"
+            height="160"
+            alt="MDB Logo"
+            loading="lazy"
+            style="margin-top: -1px;"
+          />
+        </a>
+         <div class="collapse navbar-collapse" id="navbar1">
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'main:home_view' %}">Home
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'main:home_view' %}">About Us</a>
+              </li>
+              <li class="nav-item vertical-line">
+                  <a class="nav-link" href="{% url 'main:home_view' %}">Recommendations</a>
+              </li>
+              <li class="nav-item vertical-line">
+                  <a class="nav-link" href="{% url 'main:home_view' %}">Contact Us</a>
+              </li>
+
+          </ul>
+          <!-- Links -->                
+      </div>
+      <!-- Collapsible content -->
+  </nav>
+  <!--/.Navbar-->
+    </div>
+</nav>  
+
+<div class="video-background-holder">
+    <div class="video-background-overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      {% block video %}
+          <source src="/static/vid/backgroundVid.mp4" type="video/mp4">
+      {% endblock %}
+
+      </video>
+    <div class="video-background-content container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          {% block videotitle %}
+          <h1 class="display-1 text-white mb-md-4">Saudi Arabia</h1>
+          {% endblock videotitle %}
+
+          <div>
+            {% block videocontent %}
+          <p class="lead mb-0">Let's discover Saudi Arabia</p>
+          {% endblock videocontent %}
+
+          <button class="btn btn-mute btn-success">Discover</button>
+      
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="content">
+`    <div class="body-content">
+
+
+        <div class="about-left" style="width:40%">
+            {% block leftContent %}
+            <h2>
+              Heritage
+            </h2>
+            <p>The Kingdom of Saudi Arabia is rich in heritage and ancient history, and it is home to hundreds of important historical sites, which extend from the oldest cities in the Arabian Peninsula in Al-Ula and its majestic ruins to the ancient alleys in the center of the country in Jeddah.            </p>
+            <br>
+            <h2>
+              An opportunity for economic and cultural development
+                        </h2>
+            <p>
+              The tourism sector is poised to become one of the main sources of the diversified economy in the Kingdom, and aims to contribute to the gross domestic product by more than 10%, and is supported by huge investments in entertainment and tourism infrastructure, and by seizing the scenic and diverse natural beauty of the Kingdom of Saudi Arabia, tourism will provide opportunities for diversified jobs and commercial growth , which enhances the international standing of the Kingdom while preserving its national identity.            </p>
+            <br>
+            <h2>
+Numbers!
+            </h2>
+            <p>
+              More than 3,500 tourism investment licenses have been issued in Saudi Arabia so far.            </p>
+            {% endblock leftContent %}
+        </div>
+
+        <div class="about-right">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" >
+
+                  <div class="carousel-item active" data-bs-interval="5000" >
+
+                    {% block fristImageContent %}
+
+                    <h5>Sacred Mosque</h5>
+                      <p>One of the most important religious tourist attractions in Saudi Arabia, many visitors come to it throughout the year, and it acquires great importance and sanctity among Muslims as it is the site of the greatest pilgrimage.</p>
+                        {% endblock fristImageContent %}
+                    <img  src="{% block fristImage %}{% static 'images/makkah-riyadh-xpress.jpg' %} {% endblock fristImage %} " class="d-block w-100" alt="..." style="height: 350px;">
+
+
+
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    {% block SecondImageContent %}
+                    <h5>Masmak Castle</h5>
+                    <p>One of the most prominent tourist attractions in Saudi Arabia, dating back to the end of the 19th century, the castle is located in the center of the old city "Al-Deira".</p>
+                   {% endblock %}
+                    <img src="{% block secondImage %}{% static 'images/Masmak_Fort1.jpg' %}{% endblock %}" class="d-block w-100" alt="..." style="height: 350px; width: 100%;">
+
+
+
+                  </div>
+                  <div class="carousel-item">
+                    {% block ThirdImageContent %}
+                    <h5>NEOM</h5>
+                      <p>NEOM is the project of the future, the destination for an exceptional eco-holiday, an international airport, mountain resorts, high-tech port and logistics facilities, advanced manufacturing, technical parks, and more.</p>
+                      {% endblock %}
+                      <img src="{% block ThirdImage %}{% static 'images/neom-port-business-hero-v5.jpg' %}{% endblock %}" class="d-block w-100" alt="..." style="height: 350px;">
+
+
+
+                  </div>
+                  <div class="carousel-item">
+                    {% block FourthImageContent %}
+                    <h5>The Line</h5>
+                      <p>Put people first by giving them an unprecedented urban living experience while preserving the nature around them. The Line will redefine the concept of urban development and what cities should look like in the future.</p>
+                      {% endblock %}
+                      <img src="{% block FourthImage %}{% static 'images/theline.jpeg' %}{% endblock %}" class="d-block w-100" alt="..." style="height: 350px;">
+
+
+
+                  </div>
+                </div>
+{% block controls %}
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="position:absolute; bottom: 45%;" >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" style="position:absolute; bottom: 45%; ">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+              </div>
+
+        </div>
+
+
+    </div>
+{% endblock controls %}
+
+
+{% block slides %}
+
+<div class="slides">
+  <br>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        
+        <div class="item active">
+
+          <div class="item">
+
+          <img  src="{% static 'images/visit-saudi-cards-02.png' %}" style="width:100%;">
+          <div class="carousel-caption">
+    
+            <h3>الأحساء</h3>
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تتوجه أنظار الملايين من السياح إلى المملكة العربية السعودية كوجهة عالمية للزيارة والاستكشاف. وباعتبارها مهد الحضارة الإسلامية، ومركز تقاطع القارات الذي عبره الحجاج والتجار منذ آلاف السنين، تضم المملكة العربية السعودية ثقافة غنية وتراثًا زاخرًا لا يضاهيها فيه أي مكان آخر في العالم. في سبتمبر مع وجود أكثر من 2.5 مليون شجرة نخيل تغطي مساحة داخلية خضراء من ساحل الخليج في المملكة العربية السعودية، تعد الأحساء واحة صحراوية خصبة نموذجية وواحدة من مناطق المملكة العربية السعودية المعترف بها كموقع للتراث العالمي لليونسكو، كما تم الاعتراف بالأحساء مؤخرًا من قبل موسوعة غينيس للأرقام القياسية باعتبارها أكبر واحة قائمة بذاتها في العالم. يملك زوار الأحساء الكثير من الخيارات فهي موطن الينابيع الساخنة والباردة، والمساجد التاريخية، والمناظر البانورامية الشاملة.. ستجد الكثير لاستكشافه في هذه الواحة التي يبلغ عمرها 6000 عام، والتي لطالما كانت بوابة لشبه الجزيرة العربية.</p>
+   
+
+          </div>
+        </div>
+        </div>
+  
+        <div class="item">
+
+          <img  src="{% static 'images/1000_0ad8122241.jpg' %}" style="width:100%;">
+
+
+          <div class="carousel-caption">
+
+            <h3>الرياض</h3>
+
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">الرياض هي عاصمة المملكة العربية السعودية التي تتمتع بمزيج رائع بين عراقة الماضي وحداثة الحاضر. فهي مدينة حديثة تضم الجذور التاريخية الأولى لشبه الجزيرة العربية إلى جانب كونها مدينة محورية في خطة المملكة التنموية الطموحة "رؤية السعودية 2030"، الرياض هي أيضًا موطن لتاريخ رائع يمتد لقرون تشهد عليه الأسواق التراثية والمتاحف الرائعة والهندسة المعمارية القديمة. في السنوات الأخيرة، ازدهرت الرياض لتصبح مركزًا تجاريًا واستثماريًا نشطًا، وموطنًا للمباني الشاهقة ومشهدًا فنياً معاصراً مزدهراً وتعد أشهر الشتاء وقتًا مثاليًا لزيارة مدينة الرياض. حيث يبلغ متوسط درجات الحرارة 20 درجة مئوية. تقدم الرياض تجربة فريدة للزوار كونها من أجمل مدن المنطقة.
+
+            </p>
+        </div>
+        </div>
+      
+        <div class="item">
+          
+          <img  src="{% block Image3 %}{% static 'images/العلا12.jpg' %} {% endblock Image3 %} " style="width:100%;">
+
+          <div class="carousel-caption">
+ 
+
+            <h3>العلا</h3>
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تعدّ العلا موطنًا لواحد من أرقى مواقع التراث العالمي لليونسكو في المملكة وتقع في عمق الصحراء في شمال غرب المملكة العربية السعودية. تمتلك العلا مقومات جعلتها إحدى أبرز الوجهات السياحية العالمية حيث توجد المقابر القديمة، وإرث 7000 عام من الحضارة الإنسانية، وتكوينات صخرية بديعة وأخاديد، وعدد كبير من خيارات رياضات المغامرة والمنشآت الفنية المتطورة.            </p>
+          
+
+          </div>
+        </div>
+
+        <div class="item">
+
+          <img  src="{% block Image4 %}{% static 'images/images/الباحة.png' %} {% endblock Image4 %} " style="width:100%;">
+
+          <div class="carousel-caption">
+          
+
+            <h3>الباحة</h3>
+
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">في بلد يشتهر عادة بصحرائه القاحلة، هذه المدينة التي تقع على ارتفاع شاهق في منطقة الحجاز موطن للأبراج العالية والغابات الخضراء الكثيفة والوديان الملتوية. قامت القبائل القديمة بتشكيل العديد من المعالم التاريخية التي لا تزال شاهداً على عراقة الباحة، بما في ذلك 1001 برج من أبراج مراقبة القصبة الحجرية والأسواق التاريخية القديمة. يمكن للزوار أيضًا تجربة قيادة ذات مناظر خلابة لا تُنسى حول انحناءات الجبال الخلابة، وبساتين المشمش والرمان، والغابات المحيطة بالمدينة. إن الطريق إلى قرية ذي عين الرخامية الشهيرة تجربة استثنائية تعبر فيها من خلال الوديان المتعرجة والأطلال والحصون القديمة، مما يجعل من زيارتك للباحة تجربة لا تنسى.</p>
+           
+
+          </div>
+        </div>
+        <div class="item">
+
+          <img  src="{% block Image5 %}{% static 'images/0_lJz6JnbkxvE23tw9.jpg' %} {% endblock Image5 %} " style="width:100%;">
+
+          <div class="carousel-caption">
+            
+
+            <h3>جازان</h3>
+
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تمتد جازان لمسافة 200 كيلومتر على طول ساحل البحر الأحمر في المملكة العربية السعودية. وتزخر هذه المنطقة بثرواتها الطبيعية والثقافية والمغامرة، بما فيها من مناظر طبيعية تتنوع بين شواطئ من الرمال البيضاء ومياه البحر الزرقاء، والغابات الخضراء وقمم الجبال الصخرية. تشتهر المدينة الساحلية بأنها نقطة انطلاق لجزر فرسان، والتي تشكل أرخبيلاً محمياً من الجزر والشعب المرجانية. كما تعد موطناً لكثير من الحياة البرية والكائنات البحرية الملونة، وملاذاً لأولئك الذين يتطلعون إلى استكشاف التنوع الجغرافي للمملكة. </p>
+           
+
+          </div>
+        </div>
+        <div class="item">
+          <img  src="{% block Image6 %}{% static 'images/ينبع.jpg' %} {% endblock Image6 %} " style="width:100%;">
+
+          <div class="carousel-caption">
+            
+
+            <h3>ينبع</h3>
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تقع مدينة ينبع الساحلية على بعد بضع ساعات غرب المدينة المنورة، وتشتهر بمصافي النفط والمصانع، وتعد ممراً بحرياً قديماً حيث عاش لورانس العرب في مبنى حجازي نموذجي بين العامين 1915 و 1916. ستجد العديد من المناطق الجاذبة في المنطقة التاريخية حول المرفأ، والتي تنبض بالحياة ليلاً. انضمّ إلى السكان المحليين وتناول معهم بعض الأسماك التي اصطادوها في البحر الأحمر، واكتشف الممرات المتوهجة لسوق الليل (السوق الليلي)، واشتر التمور المنتجة محليًا.
+             
+
+            </p>
+          </div>
+        </div>
+        <div class="item">
+
+          <img  src="{% block Image7 %}{% static 'images/tabuk_tablet.png' %} {% endblock Image7 %} " style="width:100%;">
+
+
+          <div class="carousel-caption">
+            
+
+            <h3>تبوك</h3>
+
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">مدينة تبوك، عاصمة منطقة تبوك الواقعة شمال غرب المملكة العربية السعودية، هي موطن لبعض أقدم المواقع الأثرية في المملكة العربية السعودية. كما تتميز المنطقة أيضًا بمناظر ساحلية خلابة، مع مدن ساحلية ساحرة مثل حقل وشرما التي تنعم بالمياه الصافية والشواطئ النقية. كما تتوفر المزيد من التضاريس الطبيعية التي من الممكن استكشافها مثل المقابر المنحوتة في مغاير شعيب، أو عيون موسى بالقرب من مقنا حيث تتدفّق الينابيع الطبيعية أسفل أشجار النخيل.
+            
+
+            </p>
+          </div>
+        </div>
+        <div class="item">
+
+          <img  src="{% block Image8 %}{% static 'images/medina_tablet.png' %} {% endblock Image8 %} " style="width:100%;">
+
+
+          <div class="carousel-caption">
+         
+
+            <h3>المدينة المنورة</h3>
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">المدينة المنورة هي ثاني أقدس المدن الإسلامية ووجهة رئيسية لملايين الحجاج الذين يسافرون إلى المملكة العربية السعودية للحج أو العمرة. تتمركز المدينة حول المسجد النبوي، الذي شيده الرسول الكريم، وأيضاً المكان الذي دفن فيه. كان للمدينة المنورة دور محوري في حياة نبيّنا محمد صلى الله عليه وسلم؛ لذلك سميّت بالمدينة المنورة وهي تعني "المدينة المستنيرة". تعدّ زيارة المدينة المنورة حلماً للمسلمين في جميع أنحاء العالم.
+            
+
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img  src="{% block Image9 %}{% static 'images/taif_tablet.png' %} {% endblock Image9 %} " style="width:100%;">
+
+          <div class="carousel-caption">
+         
+
+            <h3>الطائف</h3>
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تعتبر طرق الطائف الجبلية الطويلة والمتعرجة مقدمة مثالية لهذه المنطقة الفاتنة. مرورًا بأسواق الفاكهة ومزارع الورد والأودية العميقة قبل الوصول إلى الهضبة التي تقع عليها الطائف. تشتهر مدينة الطائف، التي غالبًا ما يشار إليها باسم مدينة الورود، بالزهور العطرة الشهيرة التي تنمو في الوديان والجبال المحيطة بها. وبفضل ارتفاعها، فإنها بمثابة ملاذ بارد من الطقس الحار. تزدهر الطائف بشكل كبير في أغسطس، فهو توقيت مهرجان سوق عكاظ الثقافي ومهرجان ولي العهد للإبل.
+          
+
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          
+          <img  src="{% block Image10 %}{% static 'images/مزرعة.jpeg' %} {% endblock Image10 %} " style="width:100%;">
+
+
+          <div class="carousel-caption">
+       
+
+            <h3>القصيم</h3>
+
+            <p class="bg-dark text-white bg-opacity-75" dir="rtl">تتميز مدينة القصيم وخصوصاً بريدة بالزراعة والمزارع وأبرزها مزارع التمور حيث تمتلك القصيم سوق عالمي مخصص لتجارة التمور في المملكة يمكنك أن تجد فيه ما لذ وطاب من أجود أنواع التمور وأكثرها تنوعاً، كما يأتي إلى بريدة مجموعات كبيرة من السياح العرب من كل مكان لشراء تمورها المشهورة وغيرها من المحاصيل المتنوعة المذكورة أدناه</p>
+           
+
+          </div>
+
+        </div>
+
+      </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+      <br>
+      <!-- End Example Code -->
+
+</div>
+
+{% endblock %}
+
+{% block cards %}
+
+{% endblock cards %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
