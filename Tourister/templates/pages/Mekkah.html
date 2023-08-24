@@ -1,0 +1,23 @@
+{% extends 'pages/base.html' %} {% load static %} {%block title%}Mekkah
+City{%endblock%} {% block content %}
+<video autoplay loop muted plays-inline class="back-video">
+  <source src="{% static 'imges/Makkah.mp4' %}" type="video/mp4" />
+</video>
+<div class="content">
+  <h1 class="text-uppercase">
+    Prepare to journey to Mecca <br />
+    the center of tolerance and faith.
+  </h1>
+  <p>
+    <br />The Kaaba towers above the sky with pride and shines with majesty. The
+    beautiful sound of the call to prayer is emitted from the Holy Mosque of
+    Mecca, the center of tolerance and faith, alerting everyone that Makkah
+    Al-Mukarramah is getting ready to accept visitors.
+    <br />
+  </p>
+  <br /><a href="http://127.0.0.1:8000/VideoRM/" class="btn1"
+    ><button type="button" class="btn btn-primary btn-sm">LET'S GO</button></a
+  >
+</div>
+
+{% endblock %}
