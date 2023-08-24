@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+{% block title %}  home  {% endblock %}
+
+
+ 
+{%block image%} 
+
+
+<div style="background-image:linear-gradient(rgba(235, 225, 225, 0),rgba(0,0,0,9)) , url('/static/images/background.jpg') " class="backimage">
+
+</div>
+
+
+{%endblock%}
+
+
+
+{%block content%}
+
+
+<div class="container contain_content">
+    <div class="row">
+        <h1> Tourism in Saudi Araba </h1>
+        <div class="col">
+            <h2>The second biggest tourist destination in the Middle East </h2>
+            
+             <a href="{% url 'main:regons_view'%}"> <button type="button" class="btn btn-light btn-lg  "> click for More </button></a>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+ {%endblock%}
+
+
+
+ 
+
+

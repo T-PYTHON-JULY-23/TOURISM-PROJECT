@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+
+{% block title %} Tourism in Saudi {% endblock %}
+
+
+{%block image%} 
+
+
+<div style="background-image: url('/static/images/tourismsaudi.jpg'); " class="backimage ">
+
+</div>
+
+
+{%endblock%}
+
+
+{%block content%}
+
+    
+<section>
+    <div class="container pt-4">
+        <div class="testimonials">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                                <div class="profile"> 
+                                    <div class="img-area">
+                                        <img src="/static/images/map.jpg">
+                                    </div>
+                                        <div class="bio">
+                                            <h2> Saudi Arabia</h2>
+                                        </div> 
+                                </div>
+                            </div>
+                          <div class="col-md-6">
+                              <div class="content">
+                                  <p>The Kingdom of Saudi Arabia is divided into 13 emirates or regions/provinces known as the Provincial Governor, to differentiate them from the governors of governorates. The 13 emirates are further divided into 118 governorates each governed by a Governor.</p>
+                                  <picture>
+                                      <i ><img  src="/static/images/regon.png" width="300"> </i>
+                                  </picture>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile">
+                                  <div class="img-area">
+                                      <img src="/static/images/saudi_arabia_flag.jpg">
+                                  </div>
+                                  <div class="bio">
+                                      <h2>Tourism in saudi Arabia</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content">
+                                  <p>Saudi Arabia is full of rich natural and historical spectacles. It has attracted Muslim pilgrims for centuries from all over the world. Its diverse natural environment and affluent cultural heritage are major attractions for both domestic and international tourists. The paper describes tourism in Saudi Arabia and highlights tourist points in the country.</br> <bdo> major tourist attractions in Saudi Arabia </bdo> are the capital city of Riyadh, Jeddah, Dammam, Taif, Makkah, and Madinah and Asir, etc. There are many historical, religious, and leisure destinations that attract visitors to Saudi Arabia.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile">
+                                  <div class="img-area">
+                                      <img src="/static/images/Leisure _tourism.jpg" alt="">
+                                  </div>
+                                  <div class="bio">
+                                      <h2>Religious and Leisure tourism </h2> 
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content pt-1">
+                                  <p>Religious tourism</br> In Saudi Arabia tourism is associated mainly with religious pilgrimages. Every year, millions of Muslim pilgrims come to the holy city of Makkah to perform Hajj. It is the birthplace of Prophet Mohammad, The Hajj is the largest voluntary mass movement and the largest concentration of people for any event in the world</p>
+                                  <p> Leisure tourism</br>  Saudis visit nearby places for recreational purposes; however, spending holidays by the seaside has become an increasing demand among the well-to-do Saudis in the recent years. Towns like Abha are most visited by Saudis due to their pleasant climate during summers.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+{%endblock%}
