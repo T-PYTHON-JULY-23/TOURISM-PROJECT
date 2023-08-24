@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(179, 175, 175, 0), rgba(0,0,0,9)), url("/static/imges/saudi.png");
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.city-img{
+    margin-top: 350px;
+}
+.besc-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+@media(min-aspect-ratio: 16/9){
+    .besc-video{
+        width: 100%;
+    
+    }
+}
+.card-body i{
+    font-size: 50px;
+}
+.img-area img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.tit{
+    margin-top: 1000px ;
+}
+.city{
+    padding-top: 500px;
+}
+.main{
+    
+    margin-top: 60px;
+}
+.bor{
+    background-color: rgba(193, 176, 66, 0.47);
+}
+.img-fluld img{
+    width: 50px;
+    height: auto;
+}
+.word{
+    border: 2px solid rgb(219, 197, 72);
+     padding-top :40px;
+}
+.box{
+    background-color: rgba(255, 255, 255, 0.532);
+}
