@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+
+
+{%block title%} Medina {%endblock%}
+
+
+{%block img%}
+        <div class="home" style="
+        position: relative;
+        height: 70vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(179, 175, 175, 0), rgba(0,0,0,9)), url('/static/imges/madina.jpeg');
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position:  center;">
+        {%endblock%}
+
+{% block content %}
+<body style="background-color: rgb(0, 0, 0);"></body>
+
+<div class="eastern pt-5 mt-5">
+    <div class="row pt-5 ps-4 mt-5">
+        <div class="col-12 col-md-6 order-2 order-md-1 mt-5">
+            <div class="d-flex flex-column justify-content-center text-center align-items-center pt-5 mt-5">
+                <h1 class="pt-5 text-light  " style="margin-top: 100px;">Medina</h1>
+            </div>
+        </div>
+            <div class="col-12 col-md-6 g-0 order-1 order-md-2 pt-5 mt-5">
+                <p class="pt-5 text-center text-light shadow-sm p-3 mb-5 rounded pe-4 mt-5"style="margin-top: 80px;font-family: 'Work Sans', sans-serif;font-size: 15px;">It was known in the past as Yathrib, and its founding dates back to the sixth century BC. Medina is the first Islamic capital, and it is one of the most important places of revelation to the Messenger of God, Muhammad - may God bless him and grant him peace -, as he immigrated to it in 622 AD, and built the Noble Prophet’s Mosque - the second holiest place on earth for Muslims - which included his grave, after he lived In the city until the last days of his life. The city abounds with a great Islamic heritage, as it includes the Quba Mosque - the first mosque built in Islam - and dozens of historical mosques and immortal monuments. And it gained importance since ancient times for its geographical location, as it is located on the path of pilgrimage and trade, and its land has a unique nature, as it contains mountains, plains, and oases, in addition to gold, silver, and copper mines. Medina receives millions of Muslims, who yearn to visit it from all over the world every year, as it is one of the most important religious destinations, as the Haram border area is dedicated to Muslims only. And its museums, and enjoying its gardens and recreational destinations.</p>
+            </div>
+        </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="class col">
+            <h1 class="border border-warning bor text-center text-light">Hotels</h1>
+        </div>
+    </div>
+</div>
+<div class="container "></div>
+    <div class="d-flex flex-row text-center justify-content-center pt-5 ps-5 ">
+        <div class="card bg-dark" style="width: 18rem;">
+            <img src="/static/imges/m.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-light"style="font-family: 'Patua One', cursive;font-size: 30px;">Crowne Plaza Hotel</h5>
+            <p class="card-text text-light"style="font-family: 'Work Sans', sans-serif;font-size: 15px;">This hotel provided a view of the Haram of the Prophet's Mosque, so pilgrims can directly reach the male and female entrances of the Prophet's Mosque on foot or by using the free shuttle service, thanks to the location of the property.</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row text-center pt-5 ps-5 "></div>
+            <div class="card bg-dark" style="width: 18rem;">
+                <img src="/static/imges/h.webp" class="card-img-top" alt="...">
+                <div class="card-body text-light">
+                <h5 class="card-title "style="font-family: 'Patua One', cursive;font-size: 30px;">Dar Al Eiman Intercontinental</h5>
+                <p class="card-text"style="font-family: 'Work Sans', sans-serif;font-size: 15px;">Ideally located next to the Prophet's Mosque Square, Dar Al Eiman InterContinental offers rooms with air conditioning and satellite TV. King Abdulaziz Public Library is only a 10-minute walk away.</p>
+                </div>
+            </div>
+        <div class="d-flex flex-row text-center pt-5 ps-5 "></div>
+        <div class="card bg-dark pt" style="width: 18rem;">
+            <img src="/static/imges/k.webp" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+            <h5 class="card-title"style="font-family: 'Patua One', cursive;font-size: 30px;"> Madinah Hilton</h5>
+            <p class="card-text"style="font-family: 'Work Sans', sans-serif;font-size: 15px;">The Madinah Hilton is located a short walk from the Prophet's Mosque, in the heart of Madinah's shopping district. The hotel offers comfortable rooms with satellite TV.</p>
+            </div>
+        </div> 
+    </div>
+</div>
+{%endblock%}

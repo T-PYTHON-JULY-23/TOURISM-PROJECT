@@ -1,0 +1,74 @@
+
+{% extends 'main/base.html' %}
+
+
+{%block title%}home page{%endblock%}
+{%block img%}
+        <div class="home" style="
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(179, 175, 175, 0), rgba(0,0,0,9)), url('/static/imges/saudi.png');
+        background-size: cover;
+        background-repeat:no-repeat ;">
+        {%endblock%}
+
+
+{% block content %}
+<body style="background-color: rgb(0, 0, 0);;"></body>
+<div class="row pt-5">
+        <div class="row pt-5">
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                <h1 style="font-family: 'Patua One', cursive;font-size: 50px;">Welcome to Saudi Araiba</h1>
+                <p style="font-family: 'Work Sans', sans-serif;font-size: 15px;">The Kingdom of Saudi Arabia occupies a pivotal position in the heart of the Islamic and Arab worlds. A land with a rich and proud history</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="city-img">.
+    <div class="row pt-1 ps-4">
+        
+            <div class="col-md-4 pt-3" >
+                <div class="card  bg-dark pb-2 rounded-5">
+                    <div class=" card-body text-dark ">
+                        <div class="img-area ">
+                            <img src="/static/imges/kh.jpeg" alt="" class="img-fluld rounded-5">
+                        </div>
+                        <h3 class="card-title text-light pt-3"style="font-family: 'Patua One', cursive;font-size: 30px;"> The Eastern Province</h3>
+                        <p class="lead text-light"style="font-family: 'Work Sans', sans-serif;font-size: 20px;">Saudi Arabia’s Eastern Province stretches from the shallow shores of the Arabian Gulf through the palm-cloaked hills of Al Ahsa Oasis and deep into the forbidding plains of Rub’ Al Khali</p>
+                        <button class="btn bg-warning text-dark btn rounded-5"><a href="{% url 'main:eastern_viwe' %}" class="btn  rounded rounded-5" >Read more</a></button>
+                    </div>
+                </div>
+                </div>
+                <div class=" col-md-4 pt-3">
+                    <div class="card bg-dark pb-2 rounded-5">
+                        <div class=" card-body text-dark">
+                            <div class="img-area ">
+                                <img src="/static/imges/Riyadh.jpg"  class="img-fluld rounded-5">
+                            </div>
+                            <h3 class="card-title text-light pt-3"style="font-family: 'Patua One', cursive;font-size: 30px;"> The Central Region</h3>
+                            <p class="lead text-light pt-2"style="font-family: 'Work Sans', sans-serif;font-size: 20px;">Nowadays, Riyadh is known as the central region, and embraces the nation's capital: a modern metropolis with a financial and commercial center, and a growing cultural scene.</p>
+                            <button class="btn bg-warning text-dark   rounded-5"><a href="{% url 'main:riyadh_viwe' %}" class="btn  rounded rounded-5" >Read more</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <div class="card   bg-dark pb-2 rounded-5">
+                        <div class=" card-body text-dark">
+                            <div class="img-area ">
+                                <img src="/static/imges/ala.jpg" alt="" class="img-fluld rounded-5">
+                            </div>
+                            <h3 class="card-title text-light pt-2" style="font-family: 'Acme', sans-serif; font-size: 30px;"> The Southern Region</h3>
+                            <p class="lead text-light"style="font-family: 'Work Sans', sans-serif;font-size: 20px;">It is located in Medina and Makkah Al-Mukarramah, and includes the Prophet’s Mosque and the Grand Mosque, which Muslim pilgrims consider to be one of the holiest places in Islam.</p>
+                            <button class="btn bg-warning text-dark   rounded-5"><a href="{% url 'main:southHren_viwe'%}" class="btn  rounded rounded-5" >Read more</a></button>
+
+                        </div>
+                    </div>
+                </div>
+            
+        
+    </div>
+</div>
+
+{% endblock %}
