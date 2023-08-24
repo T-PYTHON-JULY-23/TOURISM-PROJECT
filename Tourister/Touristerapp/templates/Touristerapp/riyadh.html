@@ -1,0 +1,62 @@
+{% extends 'Touristerapp/base.html' %}
+{%load static%}
+{% block title %}riyadh - Tourister{% endblock %}
+
+
+{%block video%}
+<div class="hero">
+    <video autoplay muted loop plays-inline class="backVid" >
+        <source src="https://firebasestorage.googleapis.com/v0/b/tourister-28202.appspot.com/o/riyadhBackgroundVid.mp4?alt=media&token=d6f9c2a6-6c0a-4a86-9294-08f22e6393d5" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{%endblock%}
+
+{% block content %}
+<div class="content">
+    <h1>Welcome to <br> Riyadh </h1>
+    <p> 
+        Riyadh, the capital city of Saudi Arabia, stands as a remarkable blend of tradition and <br> 
+        modernity, inviting travelers to explore its multifaceted charms. This burgeoning metropolis<br> 
+        has transformed into a hub of cultural, economic, and leisure activities, making it an enticing<br> 
+        destination for both business and leisure travelers. While its towering skyscrapers and impressive<br> 
+        infrastructure showcase its contemporary side, Riyadh's cultural heritage is well-preserved in attractions<br> 
+        such as the National Museum, where artifacts and exhibits offer insights into Saudi Arabia's history and <br>
+        traditions. The bustling Souq Al Zal, a traditional market, exudes the old-world charm and authentic Arabian <br>
+        shopping experience. In contrast, King Abdulaziz Historical Center showcases the rich history of Saudi Arabia's <br>
+        founding father. For those seeking relaxation, Riyadh boasts lush parks, luxurious resorts, and recreational facilities,<br>
+        making it an ideal destination for families. Riyadh's culinary scene is a journey in itself, offering a diverse array of <br>
+        local and international cuisines to tantalize taste buds. As the city continues to evolve, Riyadh embraces its role as a <br>
+        cultural epicenter, enticing visitors with its dynamic blend of heritage, innovation, and hospitality
+    </p>
+</div>
+<section class="container">
+    <div class="slider-wraped">
+        <div class="slider-text">
+            <h2>Discover Riyadh Where Tradition Meets Futuristic Marvels</h2>
+        </div>
+     <div class="slider">
+        <img id="rdh1" src="{% static 'images/riyadhP1.jpg' %}" alt="rdh1">
+        <img id="rdh2" src="{% static 'images/riyadhP2.jpg' %}" alt="rdh2">
+        <img id="rdh3" src="{% static 'images/riyadhP3.jpg' %}" alt="rdh3">
+        <img id="rdh4" src="{% static 'images/riyadhP4.jpg' %}" alt="rdh4">
+        <img id="rdh5" src="{% static 'images/riyadhP5.jpg' %}" alt="rdh5">
+        <img id="rdh6" src="{% static 'images/riyadhP6.jpg' %}" alt="rdh6">
+        <img id="rdh7" src="{% static 'images/riyadhP7.jpg' %}" alt="rdh7">
+        <img id="rdh8" src="{% static 'images/riyadhP8.jpg' %}" alt="rdh8">
+     </div>
+     <div class="slider-nav">
+        <a href="#rdh1"></a>
+        <a href="#rdh2"></a>
+        <a href="#rdh3"></a>
+        <a href="#rdh4"></a>
+        <a href="#rdh5"></a>
+        <a href="#rdh6"></a>
+        <a href="#rdh7"></a>
+        <a href="#rdh8"></a>
+     </div>   
+    </div>
+
+</section>
+
+{%endblock%}

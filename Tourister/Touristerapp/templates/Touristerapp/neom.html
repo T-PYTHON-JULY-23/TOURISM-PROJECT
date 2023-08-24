@@ -1,0 +1,53 @@
+{% extends 'Touristerapp/base.html' %}
+{%load static%}
+{% block title %}neom - Tourister{% endblock %}
+
+{%block video%}
+<div class="hero">
+    <video autoplay muted loop plays-inline class="backVid" >
+        <source src="https://firebasestorage.googleapis.com/v0/b/tourister-28202.appspot.com/o/neomBackgroundVid.mp4?alt=media&token=bea668b2-8d7d-45c3-903d-b528686dee8a" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{%endblock%}
+
+{% block content %}
+<div class="content">
+    <h1>Welcome to <br> Neom </h1>
+    <p> 
+        NEOM, the visionary city rising along the Red Sea coast of Saudi Arabia, presents an unparalleled <br>
+        glimpse into the future of sustainable living and innovation. This ambitious project aims to redefine <br>
+        the very concept of a city, incorporating cutting-edge technologies, renewable energy sources, and a <br>
+        commitment to environmental preservation. NEOM's unique blend of natural beauty and technological <br>
+        advancement makes it a destination unlike any other. With its pristine beaches, crystal-clear waters, <br>
+        and vast expanses of desert landscapes, NEOM offers a haven for nature enthusiasts and adventure seekers. <br>
+        The city's commitment to sustainability is reflected in its eco-friendly architecture, transportation systems, <br>
+        and focus on renewable energy. Moreover, NEOM is set to become a hub for research, development, and innovation <br>
+        across various industries, attracting businesses, entrepreneurs, and forward-thinkers from around the world. <br>
+        As NEOM continues to evolve, it embodies the convergence of innovation and nature, paving the way for a harmonious <br>
+        coexistence between humans and their environment while redefining the possibilities of the modern urban experience.
+    </p>
+</div>
+
+<section class="container">
+    <div class="slider-wraped">
+        <div class="slider-text">
+            <h2>Embrace Tomorrow's Oasis NEOM's Enchanting Horizons Await Your Discovery</h2>
+        </div>
+     <div class="slider">
+        <img id="neom1" src="{% static 'images/neomP2.jpg' %}" alt="neom1">
+        <img id="neom2" src="{% static 'images/neomP3.jpg' %}" alt="neom2">
+        <img id="neom3" src="{% static 'images/neomP4.jpg' %}" alt="neom3">
+        <img id="neom4" src="{% static 'images/neomP5.jpg' %}" alt="neom4">
+     </div>
+     <div class="slider-nav">
+        <a href="#neom1"></a>
+        <a href="#neom2"></a>
+        <a href="#neom3"></a>
+        <a href="#neom4"></a>
+
+     </div>   
+    </div>
+
+</section>
+{%endblock%}
