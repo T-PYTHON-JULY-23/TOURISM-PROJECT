@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+ 
+{%block title%} Tourism in Saudi Arabia {%endblock%} 
+
+{% block content %} 
+<!--pargraph and title -->
+
+<div class="row p-5 ">
+    <div class="col ">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h4 style="color:white;">Discover Saudi Arabia: Where Culture and Beauty Unite in Splendid Harmony!</h4>
+            <p style="text-align: center;"> Saudi Arabia's tourism scene is a captivating blend of ancient history and modern aspirations. With diverse landscapes ranging from expansive deserts to pristine coastlines along the Red Sea, the country offers a unique adventure. Steeped in cultural heritage, it boasts historic treasures like Diriyah and Al-Ula, while also embracing modernity in cities like Riyadh and Jeddah. Recent reforms have opened doors to international travelers, promising a journey rich in hospitality, spirituality, and unparalleled experiences. Saudi Arabia invites visitors to discover its intriguing fusion of tradition and progress, making it a destination like no other.</p>
+        </div>
+    </div>
+</div>
+
+<!--------------mekkah------------------->
+<div class="row p-5 rounded ">
+    <div class="col-12 col-md-6 order-2 order-md-2">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1>Mekkah</h1>
+            <p style="text-align: center;"> Journey to the Sacred Heart of Islam </p>
+            <a href="{%url 'main:view_makkah'%}" class="btn btn-outline-light rounded rounded-2">More</a>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 g-0 order-1 order-md-1">
+        <img class="w-100 rounded-4" src="/static/images/Mekkah.jpg" />
+    </div>
+</div>
+<!--------------jeedah------------------->
+<div class="row p-5 rounded ">
+    <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1>Jeedah</h1>
+            <p style="text-align: center;"> Journey to Jeddah: Where Tradition and Modernity Embrace, and Every Sunset Paints a New Adventure.</p>
+            <a href="{%url 'main:view_jeddah'%}" class="btn btn-outline-light rounded rounded-2">More</a>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 g-0 order-1 order-md-2">
+        <img class="w-100 rounded-4" src="/static/images/jeddah1.jpg" />
+    </div>
+</div>
+<!--------------Abha------------------->
+<div class="row p-5 rounded ">
+    <div class="col-12 col-md-6 order-2 order-md-2">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1>Abha</h1>
+            <p style="text-align: center;"> Discover Abha: Where Every Moment Unfolds a Mountain of Memories!</p>
+            <a href="{%url 'main:view_abha'%}" class="btn btn-outline-light rounded rounded-2">More</a>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 g-0 order-1 order-md-1">
+        <img class="w-100 rounded-4" src="/static/images/abha1.jpg" />
+    </div>
+</div>
+<!--------------Riyadh------------------->
+<div class="row p-5 rounded ">
+    <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1>Riyadh</h1>
+            <p style="text-align: center;"> Riyadh: Where Tradition Meets Tomorrow, Your Gateway to Saudi Arabian Hospitality</p>
+            <a href="{%url 'main:view_riyadh'%}" class="btn btn-outline-light rounded rounded-2">More</a>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 g-0 order-1 order-md-2">
+        <img class="w-100 rounded-4" src="/static/images/Riyadh.jpg" />
+    </div>
+</div>
+<!--------------------------------------->
+
+{%endblock%}

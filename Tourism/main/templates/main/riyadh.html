@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+{%block title %} Riyadh City {%endblock%}
+
+{% block content %} 
+<!------------title with catchy phrase--------->
+<div class="row p-5 ">
+    <div class="col ">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1 style="color: white;">Riyadh</h1>
+            <h4 style="color:white;">Bridging Heritage and Innovation in the Desert Oasis</h4>
+        </div>
+    </div>
+</div>
+<div class="row p-5">
+    <!--------gallery video-------------------->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active size">
+            <video class="img-fluid "  autoplay loop muted>
+                <source  src="/static/images/riyadh.mp4"  type="video/mp4" />
+              </video>
+          </div>
+          <div class="carousel-item size">
+            <video class="img-fluid" autoplay loop muted>
+                <source src="/static/images/NewMurabba.mp4" type="video/mp4" />
+              </video>
+          </div>
+          <div class="carousel-item size ">
+            <video class="img-fluid size " autoplay loop muted>
+                <source
+                  src="/static/images/riyadhseason1.mp4"
+                  type="video/mp4"/>
+              </video>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+{%endblock%}
