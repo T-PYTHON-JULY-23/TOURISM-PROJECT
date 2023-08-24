@@ -1,0 +1,28 @@
+{%extends 'main/base.html'%}
+
+
+{% block title%} Hail {%endblock%}
+
+
+{% block content %}
+<style>
+body {
+    background-image: url("/static/images/hail2bg.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+</style>
+<div class="content1">
+    <h1>Hail City!</h1>
+    <p>Haʼil is a city in north-western Saudi Arabia. It is the capital and largest city of Ha'il Region, with a population of about 605,930. Haʼil is largely agricultural, with significant grain, date, and fruit production</p>
+    <div>
+        <a href="{% url 'main:hail2_view'%}">
+            <button class="bttn2">Places to visit in Hail</button>
+          </a>
+    </div>
+</div>
+{% endblock %}
