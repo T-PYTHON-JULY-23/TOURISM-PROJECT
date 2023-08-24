@@ -1,0 +1,6 @@
+.wraper {
+  background: url("/static/images/test.jpg") #eeee;
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
