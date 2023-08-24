@@ -1,0 +1,20 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{%block title%}Abha City{%endblock%}
+{% block content %}
+<video autoplay loop muted plays-inline class="back-video">
+  <source src="{% static 'imges/Abha.mp4' %}" type="video/mp4" />
+</video>
+<div class="content">
+  <h1 class="text-uppercase">Unwind amidst the peace and beauty <br> of nature that Abha has to offer</h1>
+  <p>
+    <br />One of the most well-known cities in Saudi Arabia is Abha, 
+    also known as the Lady of the Fog and the Bride of the Mountain.
+     It is located on top of the Hijaz Mountains in the country's extreme
+      southwest and serves as the capital and administrative hub of the Asir region.
+    <br />
+  </p>
+  <br /><a href="http://127.0.0.1:8000/VideoA/" class="btn"><button>LET'S GO</button></a>
+</div>
+
+{% endblock %}

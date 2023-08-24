@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viweport" content="width=device-width,initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{% static 'css/styleC.css' %}">
+  </head>
+      <body>   
+
+
+         <div class="content">
+            <img src="{% static 'imges/log3.png' %}" class="logo">
+            <h2>Welcome to Saudi Arabia the kingdom of goodwill.<h2>
+            </div>
+
+         <section class="home">  
+            <h1>RIYADH CITY </h1>
+            <p>Step back in time as you explore the historical sites of Riyadh. Visit the majestic Masmak Fortress and delve into its fascinating past. 
+               Wander through the bustling streets of Diriyah, the UNESCO World Heritage Site, 
+               and witness the preserved beauty of traditional mud-brick architecture.</p>
+            <div class="home-img">
+               <img src="{% static 'imges/rere.jpg' %}" class="ims">
+               <a href="http://127.0.0.1:8000/city/Riyadh/" class="btn2"><button type="button" class="btn btn-primary btn-sm">DISCOVER</button></a>
+            </div>
+         </section>         
+
+         <section class="home">  
+            <h1>MEKKAH CITY </h1>
+            <p>But Makkah Al-Mukarramah is not just a Kaaba and a sanctuary, it is also a city that embraces visitors with its open arms. Jabal Al-Noor,
+                which rises high in the city skyline, attracts visitors seeking meditation and spirituality. Visitors climb to its summit, breathe the fresh air 
+                and enjoy the majestic mountain scenery.</p>
+            <div class="home-img">
+               <img src="{% static 'imges/mekkah.jpg' %}" class="ims">
+               <a href="http://127.0.0.1:8000/city/Mekkah/" class="btn2"><button type="button" class="btn btn-primary btn-sm">DISCOVER</button></a>
+            </div>
+         </section>   
+
+         <section class="home">  
+            <h1>ALULA CITY</h1>
+            <p>Like a painting, the lush green forests that surround Ala’a Mountain await you.
+                Explore this enchanting nature and enjoy the splendor of the scenes that stretch in front of you.
+                Immerse yourself in the beauty of the huge trees, the soothing sounds of the birds, and the amazing wildlife.</p>
+            <div class="home-img">
+               <img src="{% static 'imges/alual.jpg' %}" class="ims">
+               <a href="http://127.0.0.1:8000/city/Alula/" class="btn2"><button type="button" class="btn btn-primary btn-sm">DISCOVER</button></a>
+            </div>
+         </section>   
+
+         <section class="home">  
+            <h1>ABHA CITY</h1>
+            <p>For the brave and adventurous, Abha offers an exciting experience in the Abha National Park. Prepare for a journey of climbing cliffs, 
+               wandering narrow paths, and admiring gushing waterfalls and running rivers. You will feel the thrill and excitement as you overcome natural challenges.</p>
+            <div class="home-img">
+               <img src="{% static 'imges/Abha.jpg' %}" class="ims">
+               <a href="http://127.0.0.1:8000/city/Abha/" class="btn2"><button type="button" class="btn btn-primary btn-sm">DISCOVER</button></a>
+            </div>
+         </section>  
+</body>
+
+</html>
