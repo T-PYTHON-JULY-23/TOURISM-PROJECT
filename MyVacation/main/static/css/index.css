@@ -1,0 +1,72 @@
+/*       
+        body{
+        background-image: url('static/images/hero_1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: max-content;  
+        opacity: 0.6;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: #4770e2;
+        } */ 
+
+
+body{
+    
+    background-image: url('/static/images/background98.png');
+    background-color:rgb(223 202 175 / 77%);
+    background-repeat:no-repeat;
+    background-origin: content-box;
+    background-position: bottom 450px right 110px;
+    padding-left: 2px;
+    margin-right: 5%;
+    } 
+
+.container-fluid, .navstyle{ 
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    color: rgb(207 192 178);
+
+    }
+.container .navstyle {
+    background-color:rgb(22 20 18 / 47%);
+    height: 20%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    }
+.collapse{
+    align-items: center;
+    }
+.nav-link:hover{
+    text-decoration: none;
+    background-color: rgba(212, 132, 28, 0.151);
+    color: rgb(201, 190, 184);    
+    }
+.contact{
+    /*background-color: rgba(212, 132, 28, 0.801);*/
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    }
+.card{
+        width: 15rem; 
+        height: 30rem;
+        background-color: #e4abd6;
+    }
+.hailbody{ 
+        background: url('/static/images/hailbackground.jpg');
+        background-color:rgb(223 202 175 / 77%);
+        background-repeat:no-repeat;
+        background-origin: content-box;
+        background-position: bottom 450px right 110px;
+        padding-left: 2px;
+        margin-right: 5%;
+        } 
+    

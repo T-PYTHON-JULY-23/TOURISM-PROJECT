@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Mono&family=Rowdies&family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rowdies&family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+         rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title> {%block title%}    {% endblock %}</title>
+    
+</head>
+<body >   
+    <div class="container navstyle ">
+     <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid">
+          <a class="navbar-brand navstyle nav-link" href="http://127.0.0.1:8000/" background-color='rgb(22 20 18 / 47%);'>Tourism</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-6  mr-8">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/blogs/">blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/home/">discover</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+          </div>        
+        
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      {%block content%}
+
+   
+    {% endblock %}
+  </div> </div></div>
+  <div class="container">
+    <div class="row">
+      <div class="col ">
+        <a href=" https://wa.me/96656224288" target="_blank" class="contact" >
+          <img src= 'url("/static/images/whatsapp.png")' class="contact"></button> </a>
+        </div>
+      </div></div></div>
+</body>
+</html>

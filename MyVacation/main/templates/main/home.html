@@ -1,0 +1,153 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+{% block title %} Tourister {% endblock %}
+
+{% block content %}
+
+<style>
+.btn{
+    background-color: #be4a2d;
+    font-family: 'Bebas Neue', sans-serif;
+        font-size: xx-large;
+        border-radius: 50%;
+        border: #bb5e4d;
+}
+.card .btn{
+    background-color: #1b110fb2;
+    background-color: #26201f63;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: xx-large;
+    border-radius: 50%;
+    border: #bb5e4d;
+}
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.3rem;
+    --bs-card-title-color: #eee3e3 ;
+    --bs-card-subtitle-color: rgb(255, 243, 243);
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: rgba(223, 167, 167, 0.85);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #f05e5e0d;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: #fff4f4;
+    word-wrap: break-word;
+    background-color: rgb(102 88 84);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    }
+
+.pra{
+    font-size: xx-large;
+    font-family: 'Bebas Neue', sans-serif;
+    }
+
+.pra p{
+        text-align: center;
+        position: bottom 450px right 110px;
+    }
+.discover-sec{
+        background-color: rgba(190, 171, 128, 0.829);
+        align-items: center;
+        width: 540px;
+        height: 355px;
+        display:flex;
+        flex-direction: row;
+        flex-flow: column wrap;
+        border: 70cm;
+        border-color: black;
+            }
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    row-gap: 50px;
+    justify-content:center;
+}
+   
+    </style>
+
+            <br><br><br><br><br><br><br><br>
+         
+<section class="section discover-sec">
+    <div class=" col  pra">
+        <div class="container text-center center">
+            <div class="row-9">
+              <div class="col-10">
+              <p>
+                best way to discover saudi arabia  <br><br><br><br>
+              </p>
+              </div>
+              <div class="col-10 ">
+               <a href="#1"><button class="btn"> discover</button></a>
+              </div>
+            </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<section  class="cards">
+        <br>
+        <div class="container text-center" id="1" style="margin-top: 200px;">
+            <div class="row" >
+              <div class="col">
+                <div class="card" >
+                    <img src="{% static 'images/hail-card.jpg' %}" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Hail</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="http://127.0.0.1:8000/hail" class="btn btn-primary rounded-pill">Discover</a>
+                    </div>
+                  </div>
+                          </div>
+              <div class="col">
+                <div class="card" >
+                    <img src="{% static 'images/frsan.jpg' %}" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">fursan </h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="http://127.0.0.1:8000/fursan" class="btn btn-primary rounded-pill">Discover</a>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="col">
+                <div class="card" >
+                    <img src="{%static 'images/umluj.jpg'%}" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Umluj</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="http://127.0.0.1:8000/umluj" class="btn btn-primary rounded-pill">discover</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="{%static 'images/buraidah-tower.jpg' %}" class="card-img-top" alt="..." height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">Qassim</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="http://127.0.0.1:8000/qassim" class="btn btn-primary rounded-pill">discover</a>
+                      </div>
+                    </div>
+              </div>
+            </div></div>
+        </section>
+{% endblock %}
