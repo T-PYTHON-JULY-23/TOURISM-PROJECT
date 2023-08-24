@@ -1,0 +1,168 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Riyadh {% endblock %}
+
+{% block video %}
+<source src="/static/vid/videoplayback (1).mp4" type="video/mp4">
+{% endblock video%}
+{% block videotitle %}
+<h1 class="display-1 text-white mb-md-4">ٌRiyadh</h1>
+    {% endblock videotitle %}
+
+<div>
+  {% block videocontent%}
+<p class="lead mb-0">The capital of Arab culture</p>
+{% endblock videocontent %}
+
+
+
+{% block leftContent %}
+<h2>live the modern life authentically
+</h2>
+<p>In the city of Riyadh, which does not stop growing and flourishing, you will discover the cradle of the birth of the Kingdom of Saudi Arabia, with its historical treasures hidden in the ancient palaces that embraced the moments of its founding.</p>
+<br>
+
+<p>Visitors from all over the world came to it to discover worlds of shopping, entertainment and business, living in its commercial complexes the most exciting shopping experiences</p>
+<p>Getting to know the charm of its own nature in sand dunes surmounted by the sky with its bright stars, in an environment full of natural diversity and its unique characteristics that are intriguing and inviting to explore.</p>
+{% endblock leftContent %}
+
+
+{% block fristImageContent %}
+<h5>Gamers season</h5>
+<p>The festival will include distinguished and competitive tournaments, entertainment events and various activities, in addition to amazing international concerts and shows. Gamers season is the perfect destination for fans, esports enthusiasts, and entertainment enthusiasts of all ages.</p>
+{% endblock fristImageContent %}
+
+
+{% block fristImage %}
+{% static "images/Gamers8.jpg" %}
+{% endblock fristImage %}
+
+{% block SecondImageContent %}
+<h5>Dahou district</h5>
+<p>The last remaining neighborhoods of old Riyadh on the eastern side of Wadi Hanifa, southwest of the Palace of Government, the Al-Dahu neighborhood has stood tall for 200 years in the capital, Riyadh.</p>
+{% endblock SecondImageContent %}
+
+{% block secondImage %}
+{% static "images/1000_f7e8bdba95.jpg" %}
+{% endblock secondImage %}
+
+{% block ThirdImageContent %}
+<h5>Riyadh season</h5>
+<p>Every year, the capital, Riyadh, prepares for the launch of the “Riyadh Season,” which combines Saudi culture with other international cultures, giving it a unique global character. Millions of tourists from different groups and ages attend to enjoy the activities of the season.</p>
+{% endblock ThirdImageContent %}
+
+
+
+{% block ThirdImage %}{% static 'images/sabq_import_uploads_material-file_619a675612063db1258b45b1_619a8fd01c11d.webp' %}{% endblock %}
+
+{% block FourthImageContent %}
+<h5>Janadriyah Festival</h5>
+<p>Janadriyah Festival for Heritage and Culture The Janadriyah Festival is one of the most important Arab festivals and events that are held in the Kingdom due to the manifestations it contains that reflect the Saudi Arabian heritage.</p>
+{% endblock FourthImageContent %}
+
+{% block FourthImage %}
+{% static "images/njvtlmml.png" %}
+{% endblock FourthImage %}
+
+
+
+{% block Image1 %}{% static 'images/visit-saudi-cards-02.png' %} {% endblock Image1 %}
+
+
+
+{% block slides%}
+
+<h1 style="background-color: burlywood;" dir="rtl" class="text-center">أهم الفعاليات في الرياض
+</h1>
+
+<div class="slides">
+    <br>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          
+          <div class="item active">
+  
+            <div class="item">
+  
+            <img  src="{% static 'images/The_Sky_Bridge_Hero_Banner_crop-1920x1080.webp' %}" style="width:100%;">
+            <div class="carousel-caption">
+      
+              <h3>جسر برج المملكة المعلق</h3>
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">إطلالة تكشف سحر الرياض 
+
+                على ارتفاع 300م، تنجذب عيناك نحو إطلالة بانورامية تكشف جمال مدينة الرياض خلال ألواح زجاجيّة عالية الأمان، تتيح لك الاستمتاع بمنظر السماء الداكنة المزيّنة بالنجوم المتلألئة، وتأمّل امتداد الأضواء الذهبية في طرقات الرياض ومبانيها على جسر برج المملكة المعلّق، أو يمكنك الوقوف والتقاط صور شخصية بديعة يظهر فيها سحر المدينة خلفك أثناء النهار في يوم صافٍ.</p>
+     
+  
+            </div>
+          </div>
+          </div>
+    
+          <div class="item">
+  
+            <img  src="{% static 'images/tinhat_crop-1160x650.webp' %}" style="width:100%;">
+  
+  
+            <div class="carousel-caption">
+ 
+              <h3>روضة التنهات</h3>
+  
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">بستانٌ من الغطاء النباتي الأخضر الكثيف تزينه زهور الأقحوان العطرة، تتناغم فيه أصوات العصافير الجميلة، مع جو معتدل وهواء نقي، لتصبح واحدة من أجمل أماكن التنزه، تقع على بعد 185 كلم شمال العاصمة الرياض، تحديدًا في محافظة رماح، وتعد روضة التنهات المصب النهائي لعدد من الأودية، وتكتمل صورتها البهية برمال نفود الدهناء التي تزين جانبيها الشمالي والشرقي.</p>
+          </div>
+          </div>
+        
+          <div class="item">
+            
+            <img  src="{% block Image3 %}{% static 'images/Al-Murabba-Palace.jpg' %} {% endblock Image3 %} " style="width:100%;">
+  
+            <div class="carousel-caption">
+   
+  
+              <h3>قصر المربَّع
+            </h3>
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">فذة على ماضي الرياض، ومشهد من ذاكرتها العريقة، يتجسد في جدران قصر المربع التاريخي الذي يقوم على مساحة 1,680م2، إذ أنها تفيض بذاكرة المكان، والأحداث التاريخية التي عاصرها، والمجد الذي صنع على أرضه.</p>
+            
+  
+            </div>
+          </div>
+
+
+
+          
+ 
+
+
+  
+        </div>
+  
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        <br>
+        <!-- End Example Code -->
+  
+  </div>
+  
+{% endblock %}
+
+

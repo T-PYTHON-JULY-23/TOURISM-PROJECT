@@ -1,0 +1,167 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Abha {% endblock %}
+{% block wall %}{% static 'images/ابها.jpg' %}{% endblock %}
+
+{% block video %}
+<source src="/static/vid/videoplayback.mp4" type="video/mp4">
+{% endblock video%}
+{% block videotitle %}
+<h1 class="display-1 text-white mb-md-4">Abha</h1>
+    {% endblock videotitle %}
+
+<div>
+  {% block videocontent%}
+<p class="lead mb-0">Mountain Bride</p>
+{% endblock videocontent %}
+
+
+
+{% block leftContent %}
+<h2> Abha, the scenic capital of Asir Province, has offered some amazing natural wonders that you are bound to experience for yourself. Add in the cool climate of the city and you are in for an exhilarating experience.</h2>
+<p>Abha lies about 2,200 meters above sea level and is home to some of the highest peaks in Saudi Arabia.</p>
+<br>
+
+<p>Due to its mild climate, it is an increasingly popular destination for both locals and international tourists.</p>
+<p>Many international options are offered to tourists who want to enjoy adventure, sightseeing and all the wonderful places to visit in Abha.</p>
+{% endblock leftContent %}
+
+
+{% block fristImageContent %}
+<h5>Al-Nasab neighborhood in Abha</h5>
+<p>You can learn about the heritage of the city of Abha in its historical neighborhoods dating back hundreds of years, in its unique building method, and its roads full of the identity of the ancient region, including the historical monument neighborhood located in the center of Abha and on the banks of its valley, whose name goes back to the rocks that were erected under its buildings to protect them from the valley .</p>
+{% endblock fristImageContent %}
+
+
+{% block fristImage %}
+{% static "images/alnasab-district-building_crop-1920x1080.webp" %}
+{% endblock fristImage %}
+
+{% block SecondImageContent %}
+<h5>Al Soudah
+</h5>
+<p>Al Soudah is located at an altitude of 3000 meters above sea level, on the side of the highest mountain in the Kingdom of Saudi Arabia. It is covered with juniper mountains and covered with fog throughout the year. Its climate is cold in summer and snow falls on it in winter. It includes the National Park, which is a wonderful tourist destination for camping and hiking And mountain climbing, and Al-Soudah has become a destination for many activities and sporting events during the summer.</p>
+{% endblock SecondImageContent %}
+
+{% block secondImage %}
+{% static "images/Al Soudah.webp" %}
+{% endblock secondImage %}
+
+{% block ThirdImageContent %}
+<h5>Mountain trips in Abha</h5>
+<p>Driving a car turns into a real pleasure in Asir, as the mountain roads give you an exceptional and amazing experience in their details. Take the family on a trip to (obstacles) or take those winding roads that cut through the mountains, to feel the spirit of adventure and discovery, but always be prepared for the waves of fog that add more Suspense.</p>
+{% endblock ThirdImageContent %}
+
+
+
+{% block ThirdImage %}{% static 'images/mountain-trips_crop-1920x1080.webp' %}{% endblock %}
+
+{% block FourthImageContent %}
+<h5>Natural parks in Abha</h5>
+<p>Neighboring the clouds, the city of Abha, enjoys a pristine nature and a moderate atmosphere throughout the year, which authorized it in 2017 AD to be the capital of Arab tourism, and at heights of up to 3000 meters above sea level. Its parks inhabit between fog and rain, providing stunning views and options that suit most types of trips and exploration.</p>
+
+{% endblock FourthImageContent %}
+
+{% block FourthImage %}
+{% static 'images/Abu-Kheyal-Park_crop-1920x1080.webp' %}
+{% endblock FourthImage %}
+
+
+
+{% block Image1 %}{% static 'images/visit-saudi-cards-02.png' %} {% endblock Image1 %}
+{% block caption1 %}
+<h3>العلا</h3>
+<p class="bg-dark text-white bg-opacity-75" dir="rtl">تعدّ العلا موطنًا لواحد من أرقى مواقع التراث العالمي لليونسكو في المملكة وتقع في عمق الصحراء في شمال غرب المملكة العربية السعودية. تمتلك العلا مقومات جعلتها إحدى أبرز الوجهات السياحية العالمية حيث توجد المقابر القديمة، وإرث 7000 عام من الحضارة الإنسانية، وتكوينات صخرية بديعة وأخاديد، وعدد كبير من خيارات رياضات المغامرة والمنشآت الفنية المتطورة.            </p>
+{% endblock caption1 %}
+
+
+{% block slides%}
+
+<h1 style="background-color: burlywood;" dir="rtl" class="text-center">أنشطة في أبها</h1>
+
+<div class="slides">
+    <br>
+    <div style="background-size :contain;" class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          
+          <div class="item active">
+  
+            <div class="item">
+  
+            <img  src="{% static 'images/explore-tanomah_crop-1920x768.webp' %}" style="width:130%;">
+            <div class="carousel-caption">
+      
+              <h3 dir="rtl"> تنومة
+              </h3>
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">تقع تنومة على أكتاف جبال السروات، محاطة بقممها الجبلية متباينة الارتفاع، وتفيض جمالًا بلونها الأخضر الساطع الممتد على غاباتها ومنحدراتها التي تحول معظمها إلى مدرجات زراعية في غاية الإتقان، فيما تنتشر أشجار كثيفة ومتنوعة، ومن بينها أشجار العرعر ذات الظلال الوارفة والرائحة الزكية.
+
+              </p>
+     
+  
+            </div>
+          </div>
+          </div>
+    
+          <div class="item">
+  
+            <img  src="{% static 'images/القرية.jpg' %}" style="width:100%;">
+  
+  
+            <div class="carousel-caption">
+ 
+              <h3 dir="rtl">قرية رجال ألمع في عسير
+
+            </h3>
+  
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">لا تكتمل أي رحلة إلى منطقة عسير دون المرور بقرية رجال ألمع التاريخية، بمبانيها وقلاعها الحجرية ذات الألوان المتعددة، إذ صنفت ضمن أفضل القرى السياحية حول العالم، ويفصلها عن أبها 45 كلم. </p>
+          </div>
+          </div>
+        
+          <div class="item">
+            
+            <img  src="{% block Image3 %}{% static 'images/0g1npaac.png' %} {% endblock Image3 %} " style="width:100%;">
+  
+            <div class="carousel-caption">
+   
+  
+              <h3>التنزه في أبها
+              </h3>
+  
+              <p class="bg-dark text-white bg-opacity-75" dir="rtl">زيارة أبها ممتعة لجميع الحواس، إذ تجمع ما بين الثقافة والتاريخ والفنون المدرجة في قائمة التراث غير المادي في اليونسكو، وتظهر معالم الطبيعة المدهشة في حدائقها، وتمتد إلى مطاعمها المطلة على الوديان الجبلية التي تكسوها الخضرة، مشكلةً بذلك وجهة مثالية على مدار العام.</p>
+            
+  
+            </div>
+          </div>
+        </div>
+  
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        <br>
+        <!-- End Example Code -->
+  
+  </div>
+  
+{% endblock %}
+
+
