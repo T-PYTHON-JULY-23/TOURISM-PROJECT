@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/style/style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Kanit:wght@300&family=Pacifico&family=Poppins:ital@0;1&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+          <span class="fs-5 text-light" style="font-family: 'Pacifico', cursive;">Tourism</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link text-light" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#city" class="nav-link text-light">City</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-light">contact</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="description">
+      <h1 style="font-family: 'Bricolage Grotesque', sans-serif;
+      ">Welcome to Saudi Arabia</h1>
+      <p style="font-family: 'Bricolage Grotesque', sans-serif;
+      ">Discover the charm of Saudi Arabia and enjoy a unique tourist experience in the heart of the Middle East</p>
+    </div>
+</div>
+  <div class="list-city" id="city">
+    <div class="main-text">
+      <h1>Popular <span>Destination</span></h1>
+    </div>
+    <div class="row"style="margin-top:50px;">
+      <div class="col-md-4">
+        <div class="card3">
+          <a href="{% url 'main:makkah_view' %}"><div class="img1"><img src="/static/img/makkah.jpeg"></div></a>
+          <div class="main-text">
+            <h1><span>Makkah</span></h1>
+            <p>Makkah is one of the world's leading religious tourism destinations and a holy city for Muslims. Located in Saudi Arabia and is the main pilgrimage destination with millions of pilgrims from all over the world flocking to Mecca annually.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card3">
+          <a href="{% url 'main:riyadh_view'%}"><div class="img1"><img src="/static/img/OIP.jpg"></div></a>
+          <div class="main-text">
+            <span><h1>Riyadh</h1></span>
+            <p> Riyadh is the capital of Saudi Arabia and its largest city in terms of population and area. Located in the center of the country, it is a modern and thriving urban center with cultural, economic and commercial diversity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card3">
+          <a href="{% url 'main:alula_view'%}"><div class="img1"><img src="/static/img/alula1.jpg"></div></a>
+          <div class="main-text">
+            <span><h1>AlUla</h1></span>
+            <p>AlUla is a historical and tourist city located in the Medina region of Saudi Arabia. AlUla is an important site on the ancient pilgrimage route and its history dates back thousands of years.</p><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pt-4">
+        <div class="card3">
+          <a href="{% url 'main:abha_view'%}"><div class="img1"><img src="/static/img/abha.jpg"></div></a>
+          <div class="main-text">
+            <span><h1>Abha</h1></span>
+            <p>Abha City is a beautiful city located in the southwest of Saudi Arabia in the Asir region. Abha is the capital of the Asir region and is considered one of the most important tourist cities in the Kingdom.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div>
+<section class="about" id="about">
+  <div class="containerA">
+
+    <div class="main-text">
+      <h1>About <span>Us</span></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="/static/img/pexels-photo.jpeg">
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <br/><br/><br/><br/>
+        <h2>We welcome you to tourism in the Kingdom of Saudi Arabia.</h2><br/><br/>
+        <p>We strive to provide detailed information on the main tourist attractions, cultural events, and leisure activities in the Kingdom. On our website you will find information about popular tourist places, luxury hotels and resorts, delicious food, and important travel tips.<br/><br/>
+          We are constantly updating our content to ensure accurate and up-to-date information is provided. If you have any questions or concerns, please feel free to contact us. We look forward to helping you make your trip to Saudi Arabia an unforgettable experience.
+          </p>
+      </div>
+  </div>
+  </div>
+</section>
+<fooster id="contact">
+  <div class="social-link">
+    <a href="#"><i class="bx fi-brands-twitter"></i></a>
+    <a href="#"><i class="bx fi-brands-instagram"></i></a>
+    <a href="#"><i class="bx fi-brands-youtube"></i></a>
+    <a href="#"><i class="bx fi-brands-facebook"></i></a> 
+  </div>
+  <div class="link">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Users</a>
+    <a href="#">Our Company</a>
+  </div>
+  <p>
+    &#169; CarpoolVenom All Right Reserved.
+  </p>
+</fooster>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
