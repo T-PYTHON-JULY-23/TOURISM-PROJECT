@@ -36,3 +36,5 @@
 ### You can use a CSS library to style your website (such as Bootstrap or equivalent) 
 
 ---------------------------------------------------
+- Every city page has a list of famous (resturant,touristic places and hotels).
+- Blogs page allows users to add places worth visiting in Saudi Arabia, not limited to the list of cities available on the site.  
