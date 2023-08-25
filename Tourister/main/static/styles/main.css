@@ -2,79 +2,39 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('/static/images/s1.jpeg');
-    background-size:50%;
-    min-height: 112vh;
-    padding: 30px  50px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/static/images/saudi.jpeg');
+    min-height: 100vh;
     background-repeat: no-repeat;
-    background-position:bottom;
+    background-size: cover;
+    
+}
+.font{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 25%;
+}
+
+#carousel{
+   padding-top: 5%;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   overflow:auto;
    
+}
+
+.carousel-inner{
+    border-radius: 190px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
 }
 .end{
     display: flex;
     flex-direction: row;
     column-gap: 600px;
-
-}
-.fontt{
-    padding-top: 5%;
-}
-.font h4 ,h6 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 50px;
-    width: 30%;  
-    color: rgb(5, 72, 5);
-}
-
-.font h6{
-    font-family: 'fw-lighter';;
-}
-
-.font h1 {
-  padding-top: 30px;
-  padding-left: 25%;
-  font-size: 6rem;
-  font-family: 'Tilt Prism', cursive;
-  color: rgba(5, 84, 5, 0.997);
-
-
-}
-.font h4{ 
-    padding-top: 30px;
-    font-size: 5rem;
-    row-gap: 20px;
-    padding-bottom: 20px;
-    font-size: x-large;
-  }
-
-#d{
-   justify-content: center;
-   align-items: center;
-   width: 50%;
-   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-
-}
-
-
-.bottom-bar {
-    display:flex;
-    background-color: white;
-    border-radius: 90px;
-    padding: 50px 50px;
-    column-gap: 80px;
-   
-}
-.container{
-
-
-    overflow: hidden;
-}
-
-.top {
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 3%;
+    text-align: left;
 }
 
 

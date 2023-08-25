@@ -12,12 +12,9 @@
     </head>
 
     <body>
-
-
-
           <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand text-success" href="#">Tourister</a>
+              <a class="navbar-brand text-success" href="#" ><img src="/static/images/s1.jpeg" class="bd-placeholder-img rounded-circle" width="50" height="40">  Tourister</a> 
               <button class="navbar-toggler text-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,18 +26,18 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
                     <li class="nav-item">
-                      <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active text-success" aria-current="page" href="{% url 'main:home_view'%}">Home</a>
                     </li>
                    
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Cities
                       </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-success" href='city/riyadh/'>Riyadh</a></li>
-                        <li><a class="dropdown-item text-success" href="city/abha/">Abha</a></li>
-                        <li><a class="dropdown-item text-success" href="city/makkah/">makkah</a></li>
-                        <li><a class="dropdown-item text-success" href="city/AlKhobar/">AlKhobar</a></li>
+                      <ul class="dropdown-menu"> 
+                        <li><a class="dropdown-item text-success" href="{% url 'main:riyadh_view'%}">Riyadh</a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'main:abha_view'%}">Abha</a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'main:makkah_view'%}">makkah</a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'main:AlKhobar_view'%}">AlKhobar</a></li>
                       </ul>
                     </li>
                   </ul>
