@@ -1,0 +1,74 @@
+
+{% extends 'main/base.html' %}
+
+
+{%block title%}Makkah{%endblock%}
+
+
+
+
+
+{% block content %}
+
+
+
+<span class="bordere">
+<div class="container " id="carousel">
+  <div class="row">
+    <div class="col">
+
+      <div id="c1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#c1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#c1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#c1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="/static/images/makkah4.jpeg" class="d-block w-100 rounded-pill"  >
+            
+          </div>
+          <div class="carousel-item">
+            <img src="/static/images/makkah1.jpeg" class="d-block w-100 rounded-pill"  > 
+          </div>
+          <div class="carousel-item">
+            <img src="/static/images/makkah2.jpeg" class="d-block w-100 rounded-pill"  >
+         </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#c1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+ </div>
+
+</span>
+
+<div class="end">
+ <div style="max-width: 25rem;">
+  <div class="fw-bolder fs-1 text-white">Makkah</div>
+    <p class="fw-light fs-6 text-white ">Makkah is one of the holiest cities where the house of Allah, the country of the Prophet, peace and blessings of Allah be upon him, is considered one of the most beloved places in the world</p>
+  </div>
+
+ <div class="card " style="width: 18rem;">
+  <img src="/static/images/saudi2.jpeg" class="card-img-top" alt="...">
+  <div class="card-body ">
+    <h5 class="card-title "> Makkah City 2023</h5>
+    <p class="card-text  ">Makkah City Tour, Saudi Arabia </p>
+    <a href="https://www.youtube.com/watch?v=yKTVqPaNJIw" class="btn btn-primary stretched-link bg-success "> #Makkah 2023 </a>
+  </div>
+ </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/static/images/saudi.jpeg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.font{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 25%;
+}
+
+#carousel{
+   padding-top: 5%;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   overflow:auto;
+   
+}
+
+.carousel-inner{
+    border-radius: 190px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+.end{
+    display: flex;
+    flex-direction: row;
+    column-gap: 600px;
+    padding-top: 20px;
+    padding-left: 3%;
+    text-align: left;
+}
+
+
