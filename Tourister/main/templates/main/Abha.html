@@ -1,0 +1,85 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Riyadh
+{% endblock %}
+{% block herovideo %}
+
+<div class="video-container">
+  <div id="video-background">
+    <video autoplay loop muted>
+      <source
+        src="https://firebasestorage.googleapis.com/v0/b/tourister-c4e4e.appspot.com/o/abha.mp4?alt=media&token=4addc7ea-3c6e-4195-9af0-3b5191500527"
+        type="video/mp4">
+    </video>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class=" conteier " style="margin-top: 80vh;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3"> Abha City</h1>
+          <h5 class="mb-4"> Abha is a gem in the heart of Saudi Arabia. Its breathtaking landscapes, pleasant weather,
+            and rich cultural heritage make it a must-visit destination. Explore the lush green mountains, indulge in
+            traditional cuisine, and immerse yourself in the warm hospitality of the locals. Don't forget to visit the
+            vibrant local markets and discover unique handicrafts. Abha truly offers a memorable experience for all who
+            visit.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5 w-50">
+    <div id="carouselExampleControls" class="carousel slide carousel-light" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a1.jpeg?alt=media&token=d8bff092-f2b2-4763-b2bb-e0619ba57f96"
+            class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a2.jpeg?alt=media&token=2f2046ea-c20b-4519-a50e-57fa0e32a3f3"
+            class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a3.jpeg?alt=media&token=aff4ae3e-e59f-4957-ba17-7180ce00e399"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a4.jpeg?alt=media&token=8df8c24a-801f-4a09-97c8-f9d1b7a110d8"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a5.jpeg?alt=media&token=78c75ad7-36b2-46e9-b328-fa882177afa0"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/a6.jpeg?alt=media&token=3e4b08df-7eac-46b6-b8ef-005bc8060d28"
+            class="d-block w-100" alt="...">
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

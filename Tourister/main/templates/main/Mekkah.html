@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Riyadh
+{% endblock %}
+{% block herovideo %}
+
+<div class="video-container">
+  <div id="video-background">
+    <video autoplay loop muted>
+      <source
+        src="https://firebasestorage.googleapis.com/v0/b/tourister-c4e4e.appspot.com/o/%20Makkah%20%20.MP4?alt=media&token=966c859f-203d-4fd4-9489-80dcce6c9c69"
+        type="video/mp4">
+    </video>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class=" conteier " style="margin-top: 83vh;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3"> Makkah City</h1>
+          <h5 class="mb-4"> Makkah Al-Mukarramah is one of the most important cities in Saudi Arabia. It is considered a
+            sacred place for Muslims around the world, where they perform the Hajj and Umrah pilgrimage. Makkah is home
+            to prominent religious landmarks such as the Kaaba and the Masjid al-Haram. Visiting Makkah is a unique
+            spiritual experience for Muslims and an opportunity to connect with Muslims from all over the world.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5 w-50">
+    <div id="carouselExampleControls" class="carousel slide carousel-light" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/m1.jpeg?alt=media&token=27500ed7-84f0-44dd-b7fe-aa010d596284"
+            class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/m2.jpeg?alt=media&token=edfde2da-2d03-405d-98a9-aba104033769"
+            class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/m3.jpeg?alt=media&token=84e609c2-0fce-4dd8-9cac-b6899fc248ad"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/images-5b432.appspot.com/o/m4%20.webp?alt=media&token=d00f28c5-2223-4ab9-906b-39b4eed172d6"
+            class="d-block w-100" alt="...">
+        </div>
+      
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
