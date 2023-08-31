@@ -1,0 +1,151 @@
+
+{% extends 'main/base.html' %}
+{% block title %} {% endblock %}
+
+
+
+{% block herovideo %}
+<div class="video-container">
+    <div id="video-background">
+        <video autoplay loop muted autoplay>
+        <source src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/video%2Fsaudia.mp4?alt=media&token=ef03d0db-f9a9-4c3d-be0e-2bd4f9bbca22" type="video/mp4">
+        </video>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container  ">
+    <hr class="featurette-divider">
+    <div class="col-lg-12  text-center " >
+    <p class="title text-center">
+        Tourism in Saudi araib
+
+    </p>
+    <p class="phrase col-md-8 offset-md-2 justify-content-center mb-0 ">
+        Home to rich and diverse landscape, Saudi Arabia attracts tourists
+         for its ruins of the Nabatean Kingdom in Al-Ula, the Rub' al Khali desert,
+         
+        
+     </p>
+     <div id="demo1" class="collapse col-md-8 offset-md-2 justify-content-center mt-0  " >luxurious beach resorts in Jeddah, and mountains of Taif. The old souks and modern skyscrappers and the major highlights tourists can explore in the kingdom.</div>
+                 <button type="button" class="btn mt-3" data-bs-toggle="collapse" data-bs-target="#demo1" style="color:#1e6463; font-size: 20px;">More</button>
+    </div>
+</div>
+<div class="container">
+
+</div>
+      <br>
+      <hr class="featurette-divider  " id="city" >
+
+      <div class="row  pt-0 pb-0" id="diverse">
+        <img src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Fdivider4.png?alt=media&token=88a11b43-2bb3-4f4f-9dbf-e8cc78b84570" height="">
+      </div>
+      <hr class="featurette-divider  " id="city" >
+  
+
+      <div class="container " >
+        <section class="pt-5 pb-5">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-4 pb-3">City of Saudi Arabia </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-info mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                              </svg>
+                        </a>
+                        <a class="btn btn-info mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Friyadh.jpeg?alt=media&token=3d531e38-6714-4de7-8f37-5521a8b1a94a">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Riyadh </h4>
+                                                    <p class="card-text">the beating heart of Saudi Arabia, where ancient traditions meet modern ambitions, captivating visitors with its rich history, vibrant culture, and dynamic cityscape.</p>
+                                                    <a class="btn btn-outline-secondary" href="{% url 'main:riyadh_city' %}" role="button">More</a>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Fmakkah.jpg?alt=media&token=51df705f-b750-42e1-ac16-d682d6d4df61">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Makkah</h4>
+                                                    <p class="card-text">the spiritual epicenter of Islam, draws millions of faithful pilgrims from around the world, who gather to experience the profound spirituality and embark on a sacred journey like no other."</p>
+                                                    <a class="btn btn-outline-secondary" href="{% url 'main:makkah_city' %}" role="button">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Fjeddah.jpeg?alt=media&token=c1035889-d3b7-445a-8460-35b95c013045">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Jeddah</h4>
+                                                    <p class="card-text">" the vibrant gateway to the Red Sea, blends cosmopolitan charm with a rich heritage, welcoming visitors with its stunning coastline, bustling markets, and a melting pot of cultures.</p>
+                                                    <a class="btn btn-outline-secondary" href="{% url 'main:jeddah_city' %}" role="button">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Falula.jpg?alt=media&token=98a85c70-b327-4f1d-b208-8f1911cfcef0">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Al-Ula</h4>
+                                                    <p class="card-text">a mesmerizing oasis in the heart of Saudi Arabia, reveals ancient wonders and breathtaking landscapes, where history and natural beauty converge to create an unforgettable destination.</p>
+                                                    <a class="btn btn-outline-secondary" href="{% url 'main:alula_city' %}" role="button">More</a>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2F%20%E2%80%8Fabha2.png?alt=media&token=1ff9a99c-24b0-42ff-a84e-3e71aa7a8101">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title pt-3">Abha</h4>
+                                                    <p class="card-text pt-2">nestled in the lush mountains of Saudi Arabia's Asir region, enchants visitors with its cool climate, vibrant markets, and stunning natural beauty, offering a refreshing and picturesque escape.</p>
+                                                    <a class="btn btn-outline-secondary" href="{% url 'main:abha_city' %}" role="button">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+{% endblock %}
+{% block footer %}
+<a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+    <img src="https://firebasestorage.googleapis.com/v0/b/tuorisem.appspot.com/o/img%2Fblogo.png?alt=media&token=71562c6b-39de-48de-87c9-2100e25eb228" width="150px">
+</a>
+{% endblock %}
